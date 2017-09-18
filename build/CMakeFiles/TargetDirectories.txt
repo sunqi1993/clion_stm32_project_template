@@ -1,0 +1,3 @@
+/home/sunqi/CLionProjects/mcu/build/CMakeFiles/rebuild_cache.dir
+/home/sunqi/CLionProjects/mcu/build/CMakeFiles/edit_cache.dir
+/home/sunqi/CLionProjects/mcu/build/CMakeFiles/mcu.elf.dir

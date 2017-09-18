@@ -1,0 +1,22 @@
+/home/sunqi/program/clion-2017.2/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DTOOLCHAIN_DIR=/home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3 -Dsmall=/home/sunqi/.platformio/packages/toolchain-gccarmnoneeabi -DCMAKE_TOOLCHAIN_FILE=/home/sunqi/Desktop/mcu_proj/conf/toolchain-arm-eabi-gcc.cmake -G "CodeBlocks - Unix Makefiles" /home/sunqi/CLionProjects/mcu
+CMake Deprecation Warning at /home/sunqi/program/clion-2017.2/bin/cmake/share/cmake-3.8/Modules/CMakeForceCompiler.cmake:69 (message):
+  The CMAKE_FORCE_C_COMPILER macro is deprecated.  Instead just set
+  CMAKE_C_COMPILER and allow CMake to identify the compiler.
+Call Stack (most recent call first):
+  /home/sunqi/Desktop/mcu_proj/conf/toolchain-arm-eabi-gcc.cmake:10 (CMAKE_FORCE_C_COMPILER)
+  build/CMakeFiles/3.8.2/CMakeSystem.cmake:6 (include)
+  CMakeLists.txt:4 (project)
+
+
+CMake Deprecation Warning at /home/sunqi/program/clion-2017.2/bin/cmake/share/cmake-3.8/Modules/CMakeForceCompiler.cmake:83 (message):
+  The CMAKE_FORCE_CXX_COMPILER macro is deprecated.  Instead just set
+  CMAKE_CXX_COMPILER and allow CMake to identify the compiler.
+Call Stack (most recent call first):
+  /home/sunqi/Desktop/mcu_proj/conf/toolchain-arm-eabi-gcc.cmake:11 (CMAKE_FORCE_CXX_COMPILER)
+  build/CMakeFiles/3.8.2/CMakeSystem.cmake:6 (include)
+  CMakeLists.txt:4 (project)
+
+
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/sunqi/CLionProjects/mcu/build
