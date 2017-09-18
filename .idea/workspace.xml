@@ -14,6 +14,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2d8dfa1d-6399-4291-900b-8f4e5c229b79" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -47,11 +48,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="arm_common_tables.h" pinned="false" current-in-tab="true">
+      <file leaf-file-name="arm_common_tables.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/system/include/arm_common_tables.h">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="345">
               <caret line="23" column="20" lean-forward="false" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="44" lean-forward="true" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -167,6 +178,7 @@
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/main.c" />
         <option value="$PROJECT_DIR$/.gdbinit" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -418,7 +430,7 @@
       <workItem from="1504442438312" duration="5348000" />
       <workItem from="1505655229834" duration="843000" />
       <workItem from="1505719346564" duration="17997000" />
-      <workItem from="1505742409621" duration="708000" />
+      <workItem from="1505742409621" duration="783000" />
     </task>
     <task id="LOCAL-00001" summary="第二次">
       <created>1505742975995</created>
@@ -427,11 +439,18 @@
       <option name="project" value="LOCAL" />
       <updated>1505742975996</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="第二次">
+      <created>1505743121419</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1505743121419</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="112079000" />
+    <option name="totallyTimeSpent" value="112154000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -504,22 +523,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/main.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#1#17#0" expanded="true" />
-            <element signature="e#1287#1592#0" expanded="true" />
-            <element signature="e#2984#3760#0" expanded="false" />
-            <element signature="e#3762#4705#0" expanded="false" />
-            <element signature="e#4707#4849#0" expanded="false" />
-            <element signature="e#4851#5079#0" expanded="false" />
-            <element signature="e#5081#5473#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -863,6 +866,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="23" column="20" lean-forward="false" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="44" lean-forward="true" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
           <folding />
         </state>
       </provider>

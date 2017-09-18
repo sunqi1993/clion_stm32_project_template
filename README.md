@@ -7,3 +7,5 @@ stdlib 是stm32的标准库
 system文件夹下 include文件夹内部是cmsis的底层定义   startup文件夹类包含的是stm32f103zet的 启动汇编文件 以及 链接脚本文件。
 
 user 文件夹下是用于用户自定义的文件
+
+具体配置参照：http://www.jianshu.com/p/eb6ad2107a8c
