@@ -1,8 +1,7 @@
+#add-auto-load-safe-path ~/.gdbinit
 define target hookpost-remote
-#file "~/CLionProjects/mcu/build/mcu.elf"
-set print pretty on
+file "./build/mcu.elf"
 monitor reset
 monitor halt
-load
 break main
 end

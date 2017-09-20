@@ -279,10 +279,9 @@ void test_timer3()
         delay_ms(500);
         for(int i=0;i<100;i++)
         {
-            ii++;
+            ii+=2;
             if(ii==20) ii=0;
         }
-
     }
 }
 
