@@ -232,5 +232,8 @@
 		<Unit filename="/home/sunqi/CLionProjects/mcu/../../Desktop/mcu_proj/conf/toolchain-arm-eabi-gcc.cmake">
 			<Option virtualFolder="CMake Files\..\..\Desktop\mcu_proj\conf\"/>
 		</Unit>
+		<Unit filename="/home/sunqi/CLionProjects/mcu/../../Desktop/mcu_proj/conf/toolchain-arm-eabi-gcc.cmake">
+			<Option virtualFolder="CMake Files\..\..\Desktop\mcu_proj\conf\"/>
+		</Unit>
 	</Project>
 </CodeBlocks_project_file>
