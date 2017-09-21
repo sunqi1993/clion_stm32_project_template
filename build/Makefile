@@ -915,6 +915,33 @@ user/key.c.s:
 	$(MAKE) -f CMakeFiles/mcu.elf.dir/build.make CMakeFiles/mcu.elf.dir/user/key.c.s
 .PHONY : user/key.c.s
 
+user/lcd.obj: user/lcd.c.obj
+
+.PHONY : user/lcd.obj
+
+# target to build an object file
+user/lcd.c.obj:
+	$(MAKE) -f CMakeFiles/mcu.elf.dir/build.make CMakeFiles/mcu.elf.dir/user/lcd.c.obj
+.PHONY : user/lcd.c.obj
+
+user/lcd.i: user/lcd.c.i
+
+.PHONY : user/lcd.i
+
+# target to preprocess a source file
+user/lcd.c.i:
+	$(MAKE) -f CMakeFiles/mcu.elf.dir/build.make CMakeFiles/mcu.elf.dir/user/lcd.c.i
+.PHONY : user/lcd.c.i
+
+user/lcd.s: user/lcd.c.s
+
+.PHONY : user/lcd.s
+
+# target to generate assembly for a file
+user/lcd.c.s:
+	$(MAKE) -f CMakeFiles/mcu.elf.dir/build.make CMakeFiles/mcu.elf.dir/user/lcd.c.s
+.PHONY : user/lcd.c.s
+
 user/led.obj: user/led.c.obj
 
 .PHONY : user/led.obj
@@ -941,6 +968,33 @@ user/led.s: user/led.c.s
 user/led.c.s:
 	$(MAKE) -f CMakeFiles/mcu.elf.dir/build.make CMakeFiles/mcu.elf.dir/user/led.c.s
 .PHONY : user/led.c.s
+
+user/sram.obj: user/sram.c.obj
+
+.PHONY : user/sram.obj
+
+# target to build an object file
+user/sram.c.obj:
+	$(MAKE) -f CMakeFiles/mcu.elf.dir/build.make CMakeFiles/mcu.elf.dir/user/sram.c.obj
+.PHONY : user/sram.c.obj
+
+user/sram.i: user/sram.c.i
+
+.PHONY : user/sram.i
+
+# target to preprocess a source file
+user/sram.c.i:
+	$(MAKE) -f CMakeFiles/mcu.elf.dir/build.make CMakeFiles/mcu.elf.dir/user/sram.c.i
+.PHONY : user/sram.c.i
+
+user/sram.s: user/sram.c.s
+
+.PHONY : user/sram.s
+
+# target to generate assembly for a file
+user/sram.c.s:
+	$(MAKE) -f CMakeFiles/mcu.elf.dir/build.make CMakeFiles/mcu.elf.dir/user/sram.c.s
+.PHONY : user/sram.c.s
 
 user/sys.obj: user/sys.c.obj
 
@@ -1120,9 +1174,15 @@ help:
 	@echo "... user/key.obj"
 	@echo "... user/key.i"
 	@echo "... user/key.s"
+	@echo "... user/lcd.obj"
+	@echo "... user/lcd.i"
+	@echo "... user/lcd.s"
 	@echo "... user/led.obj"
 	@echo "... user/led.i"
 	@echo "... user/led.s"
+	@echo "... user/sram.obj"
+	@echo "... user/sram.i"
+	@echo "... user/sram.s"
 	@echo "... user/sys.obj"
 	@echo "... user/sys.i"
 	@echo "... user/sys.s"

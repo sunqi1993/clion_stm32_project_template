@@ -212,6 +212,12 @@ sys.h
 sys.h
 ../user/sys.h
 
+../user/lcd.h
+sys.h
+../user/sys.h
+stdlib.h
+../user/stdlib.h
+
 ../user/led.h
 sys.h
 ../user/sys.h
@@ -251,6 +257,8 @@ usart.h
 /home/sunqi/CLionProjects/mcu/usart.h
 wdg.h
 /home/sunqi/CLionProjects/mcu/wdg.h
+lcd.h
+/home/sunqi/CLionProjects/mcu/lcd.h
 
 /home/sunqi/CLionProjects/mcu/stdlib/Src/misc.c
 misc.h
@@ -408,6 +416,8 @@ includes.h
 sys.h
 /home/sunqi/CLionProjects/mcu/user/sys.h
 
+/home/sunqi/CLionProjects/mcu/user/font.h
+
 /home/sunqi/CLionProjects/mcu/user/key.c
 stm32f10x.h
 /home/sunqi/CLionProjects/mcu/user/stm32f10x.h
@@ -422,11 +432,39 @@ delay.h
 sys.h
 /home/sunqi/CLionProjects/mcu/user/sys.h
 
+/home/sunqi/CLionProjects/mcu/user/lcd.c
+lcd.h
+/home/sunqi/CLionProjects/mcu/user/lcd.h
+stdlib.h
+/home/sunqi/CLionProjects/mcu/user/stdlib.h
+font.h
+/home/sunqi/CLionProjects/mcu/user/font.h
+usart.h
+/home/sunqi/CLionProjects/mcu/user/usart.h
+delay.h
+/home/sunqi/CLionProjects/mcu/user/delay.h
+
+/home/sunqi/CLionProjects/mcu/user/lcd.h
+sys.h
+/home/sunqi/CLionProjects/mcu/user/sys.h
+stdlib.h
+/home/sunqi/CLionProjects/mcu/user/stdlib.h
+
 /home/sunqi/CLionProjects/mcu/user/led.c
 led.h
 /home/sunqi/CLionProjects/mcu/user/led.h
 
 /home/sunqi/CLionProjects/mcu/user/led.h
+sys.h
+/home/sunqi/CLionProjects/mcu/user/sys.h
+
+/home/sunqi/CLionProjects/mcu/user/sram.c
+sram.h
+/home/sunqi/CLionProjects/mcu/user/sram.h
+usart.h
+/home/sunqi/CLionProjects/mcu/user/usart.h
+
+/home/sunqi/CLionProjects/mcu/user/sram.h
 sys.h
 /home/sunqi/CLionProjects/mcu/user/sys.h
 
@@ -468,6 +506,12 @@ sys/config.h
 
 /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/_newlib_version.h
 
+/home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/alloca.h
+_ansi.h
+/home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/_ansi.h
+sys/reent.h
+-
+
 /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/assert.h
 _ansi.h
 /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/_ansi.h
@@ -502,6 +546,8 @@ machine/_endian.h
 
 /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/machine/ieeefp.h
 
+/home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/machine/stdlib.h
+
 /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/machine/types.h
 
 /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/newlib.h
@@ -534,10 +580,36 @@ sys/types.h
 sys/stdio.h
 -
 
+/home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/stdlib.h
+machine/ieeefp.h
+-
+_ansi.h
+/home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/_ansi.h
+stddef.h
+-
+sys/reent.h
+-
+sys/cdefs.h
+-
+machine/stdlib.h
+-
+alloca.h
+-
+cygwin/stdlib.h
+-
+sys/_locale.h
+-
+
 /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/sys/_intsup.h
 sys/features.h
 -
 limits.h
+-
+
+/home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/sys/_locale.h
+newlib.h
+-
+sys/config.h
 -
 
 /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/sys/_sigset.h

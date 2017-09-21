@@ -4,8 +4,11 @@
     <file url="file://$PROJECT_DIR$/stdlib/Inc/stm32f10x.h" charset="ISO-8859-1" />
     <file url="file://$PROJECT_DIR$/user/beep.c" charset="GB18030" />
     <file url="file://$PROJECT_DIR$/user/delay.c" charset="GB18030" />
+    <file url="file://$PROJECT_DIR$/user/font.h" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/user/key.c" charset="GB18030" />
     <file url="file://$PROJECT_DIR$/user/key.h" charset="GB18030" />
+    <file url="file://$PROJECT_DIR$/user/lcd.c" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/user/lcd.h" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/user/led.c" charset="GB18030" />
     <file url="file://$PROJECT_DIR$/user/led.h" charset="GB18030" />
     <file url="file://$PROJECT_DIR$/user/sys.h" charset="GB18030" />

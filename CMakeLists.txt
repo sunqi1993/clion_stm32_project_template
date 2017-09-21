@@ -44,7 +44,8 @@ file(GLOB_RECURSE SOURCE_FILES
         #指定启动文件
         system/startup/startup_stm32f103xe.s
         main.c
-        user/*.c user/*.cpp
+        user/*.c
+        user/*.cpp
         stdlib/Src/*.c
 
         )

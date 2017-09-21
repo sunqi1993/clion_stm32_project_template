@@ -190,10 +190,22 @@
 		<Unit filename="/home/sunqi/CLionProjects/mcu/user/key.h">
 			<Option target="mcu.elf"/>
 		</Unit>
+		<Unit filename="/home/sunqi/CLionProjects/mcu/user/lcd.c">
+			<Option target="mcu.elf"/>
+		</Unit>
+		<Unit filename="/home/sunqi/CLionProjects/mcu/user/lcd.h">
+			<Option target="mcu.elf"/>
+		</Unit>
 		<Unit filename="/home/sunqi/CLionProjects/mcu/user/led.c">
 			<Option target="mcu.elf"/>
 		</Unit>
 		<Unit filename="/home/sunqi/CLionProjects/mcu/user/led.h">
+			<Option target="mcu.elf"/>
+		</Unit>
+		<Unit filename="/home/sunqi/CLionProjects/mcu/user/sram.c">
+			<Option target="mcu.elf"/>
+		</Unit>
+		<Unit filename="/home/sunqi/CLionProjects/mcu/user/sram.h">
 			<Option target="mcu.elf"/>
 		</Unit>
 		<Unit filename="/home/sunqi/CLionProjects/mcu/user/sys.c">

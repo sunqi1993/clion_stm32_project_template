@@ -39,6 +39,7 @@ CMakeFiles/mcu.elf.dir/main.c.obj
  ../user/beep.h
  ../user/delay.h
  ../user/key.h
+ ../user/lcd.h
  ../user/led.h
  ../user/sys.h
  ../user/usart.h
@@ -46,6 +47,7 @@ CMakeFiles/mcu.elf.dir/main.c.obj
  /home/sunqi/CLionProjects/mcu/main.c
  /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/_ansi.h
  /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/_newlib_version.h
+ /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/alloca.h
  /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/assert.h
  /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/limits.h
  /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/machine/_default_types.h
@@ -53,11 +55,14 @@ CMakeFiles/mcu.elf.dir/main.c.obj
  /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/machine/_types.h
  /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/machine/endian.h
  /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/machine/ieeefp.h
+ /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/machine/stdlib.h
  /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/machine/types.h
  /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/newlib.h
  /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/stdint.h
  /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/stdio.h
+ /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/stdlib.h
  /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/sys/_intsup.h
+ /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/sys/_locale.h
  /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/sys/_sigset.h
  /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/sys/_stdint.h
  /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/sys/_timespec.h
@@ -1344,6 +1349,79 @@ CMakeFiles/mcu.elf.dir/user/key.c.obj
  /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/sys/cdefs.h
  /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/sys/config.h
  /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/sys/features.h
+CMakeFiles/mcu.elf.dir/user/lcd.c.obj
+ ../stdlib/Inc/misc.h
+ ../stdlib/Inc/stm32f10x.h
+ ../stdlib/Inc/stm32f10x_adc.h
+ ../stdlib/Inc/stm32f10x_bkp.h
+ ../stdlib/Inc/stm32f10x_can.h
+ ../stdlib/Inc/stm32f10x_cec.h
+ ../stdlib/Inc/stm32f10x_conf.h
+ ../stdlib/Inc/stm32f10x_crc.h
+ ../stdlib/Inc/stm32f10x_dac.h
+ ../stdlib/Inc/stm32f10x_dbgmcu.h
+ ../stdlib/Inc/stm32f10x_dma.h
+ ../stdlib/Inc/stm32f10x_exti.h
+ ../stdlib/Inc/stm32f10x_flash.h
+ ../stdlib/Inc/stm32f10x_fsmc.h
+ ../stdlib/Inc/stm32f10x_gpio.h
+ ../stdlib/Inc/stm32f10x_i2c.h
+ ../stdlib/Inc/stm32f10x_iwdg.h
+ ../stdlib/Inc/stm32f10x_pwr.h
+ ../stdlib/Inc/stm32f10x_rcc.h
+ ../stdlib/Inc/stm32f10x_rtc.h
+ ../stdlib/Inc/stm32f10x_sdio.h
+ ../stdlib/Inc/stm32f10x_spi.h
+ ../stdlib/Inc/stm32f10x_tim.h
+ ../stdlib/Inc/stm32f10x_usart.h
+ ../stdlib/Inc/stm32f10x_wwdg.h
+ ../stdlib/Inc/system_stm32f10x.h
+ ../system/include/cmsis_armcc.h
+ ../system/include/cmsis_armcc_V6.h
+ ../system/include/cmsis_gcc.h
+ ../system/include/core_cm3.h
+ ../system/include/core_cmFunc.h
+ ../system/include/core_cmInstr.h
+ /home/sunqi/CLionProjects/mcu/user/delay.h
+ /home/sunqi/CLionProjects/mcu/user/font.h
+ /home/sunqi/CLionProjects/mcu/user/lcd.c
+ /home/sunqi/CLionProjects/mcu/user/lcd.h
+ /home/sunqi/CLionProjects/mcu/user/sys.h
+ /home/sunqi/CLionProjects/mcu/user/usart.h
+ /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/_ansi.h
+ /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/_newlib_version.h
+ /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/alloca.h
+ /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/assert.h
+ /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/limits.h
+ /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/machine/_default_types.h
+ /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/machine/_endian.h
+ /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/machine/_types.h
+ /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/machine/endian.h
+ /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/machine/ieeefp.h
+ /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/machine/stdlib.h
+ /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/machine/types.h
+ /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/newlib.h
+ /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/stdint.h
+ /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/stdio.h
+ /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/stdlib.h
+ /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/sys/_intsup.h
+ /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/sys/_locale.h
+ /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/sys/_sigset.h
+ /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/sys/_stdint.h
+ /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/sys/_timespec.h
+ /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/sys/_timeval.h
+ /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/sys/_types.h
+ /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/sys/cdefs.h
+ /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/sys/config.h
+ /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/sys/custom_file.h
+ /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/sys/features.h
+ /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/sys/lock.h
+ /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/sys/reent.h
+ /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/sys/sched.h
+ /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/sys/select.h
+ /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/sys/stdio.h
+ /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/sys/timespec.h
+ /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/sys/types.h
 CMakeFiles/mcu.elf.dir/user/led.c.obj
  ../stdlib/Inc/misc.h
  ../stdlib/Inc/stm32f10x.h
@@ -1391,6 +1469,73 @@ CMakeFiles/mcu.elf.dir/user/led.c.obj
  /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/sys/cdefs.h
  /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/sys/config.h
  /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/sys/features.h
+CMakeFiles/mcu.elf.dir/user/sram.c.obj
+ ../stdlib/Inc/misc.h
+ ../stdlib/Inc/stm32f10x.h
+ ../stdlib/Inc/stm32f10x_adc.h
+ ../stdlib/Inc/stm32f10x_bkp.h
+ ../stdlib/Inc/stm32f10x_can.h
+ ../stdlib/Inc/stm32f10x_cec.h
+ ../stdlib/Inc/stm32f10x_conf.h
+ ../stdlib/Inc/stm32f10x_crc.h
+ ../stdlib/Inc/stm32f10x_dac.h
+ ../stdlib/Inc/stm32f10x_dbgmcu.h
+ ../stdlib/Inc/stm32f10x_dma.h
+ ../stdlib/Inc/stm32f10x_exti.h
+ ../stdlib/Inc/stm32f10x_flash.h
+ ../stdlib/Inc/stm32f10x_fsmc.h
+ ../stdlib/Inc/stm32f10x_gpio.h
+ ../stdlib/Inc/stm32f10x_i2c.h
+ ../stdlib/Inc/stm32f10x_iwdg.h
+ ../stdlib/Inc/stm32f10x_pwr.h
+ ../stdlib/Inc/stm32f10x_rcc.h
+ ../stdlib/Inc/stm32f10x_rtc.h
+ ../stdlib/Inc/stm32f10x_sdio.h
+ ../stdlib/Inc/stm32f10x_spi.h
+ ../stdlib/Inc/stm32f10x_tim.h
+ ../stdlib/Inc/stm32f10x_usart.h
+ ../stdlib/Inc/stm32f10x_wwdg.h
+ ../stdlib/Inc/system_stm32f10x.h
+ ../system/include/cmsis_armcc.h
+ ../system/include/cmsis_armcc_V6.h
+ ../system/include/cmsis_gcc.h
+ ../system/include/core_cm3.h
+ ../system/include/core_cmFunc.h
+ ../system/include/core_cmInstr.h
+ /home/sunqi/CLionProjects/mcu/user/sram.c
+ /home/sunqi/CLionProjects/mcu/user/sram.h
+ /home/sunqi/CLionProjects/mcu/user/sys.h
+ /home/sunqi/CLionProjects/mcu/user/usart.h
+ /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/_ansi.h
+ /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/_newlib_version.h
+ /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/assert.h
+ /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/limits.h
+ /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/machine/_default_types.h
+ /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/machine/_endian.h
+ /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/machine/_types.h
+ /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/machine/endian.h
+ /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/machine/ieeefp.h
+ /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/machine/types.h
+ /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/newlib.h
+ /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/stdint.h
+ /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/stdio.h
+ /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/sys/_intsup.h
+ /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/sys/_sigset.h
+ /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/sys/_stdint.h
+ /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/sys/_timespec.h
+ /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/sys/_timeval.h
+ /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/sys/_types.h
+ /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/sys/cdefs.h
+ /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/sys/config.h
+ /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/sys/custom_file.h
+ /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/sys/features.h
+ /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/sys/lock.h
+ /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/sys/reent.h
+ /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/sys/sched.h
+ /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/sys/select.h
+ /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/sys/stdio.h
+ /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/sys/timespec.h
+ /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include/sys/types.h
 CMakeFiles/mcu.elf.dir/user/sys.c.obj
  ../stdlib/Inc/misc.h
  ../stdlib/Inc/stm32f10x.h
