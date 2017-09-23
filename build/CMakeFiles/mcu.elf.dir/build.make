@@ -241,9 +241,81 @@ CMakeFiles/mcu.elf.dir/user/led.c.obj.provides: CMakeFiles/mcu.elf.dir/user/led.
 CMakeFiles/mcu.elf.dir/user/led.c.obj.provides.build: CMakeFiles/mcu.elf.dir/user/led.c.obj
 
 
+CMakeFiles/mcu.elf.dir/user/mcp41050.c.obj: CMakeFiles/mcu.elf.dir/flags.make
+CMakeFiles/mcu.elf.dir/user/mcp41050.c.obj: ../user/mcp41050.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sunqi/CLionProjects/mcu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/mcu.elf.dir/user/mcp41050.c.obj"
+	/home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mcu.elf.dir/user/mcp41050.c.obj   -c /home/sunqi/CLionProjects/mcu/user/mcp41050.c
+
+CMakeFiles/mcu.elf.dir/user/mcp41050.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mcu.elf.dir/user/mcp41050.c.i"
+	/home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/sunqi/CLionProjects/mcu/user/mcp41050.c > CMakeFiles/mcu.elf.dir/user/mcp41050.c.i
+
+CMakeFiles/mcu.elf.dir/user/mcp41050.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mcu.elf.dir/user/mcp41050.c.s"
+	/home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/sunqi/CLionProjects/mcu/user/mcp41050.c -o CMakeFiles/mcu.elf.dir/user/mcp41050.c.s
+
+CMakeFiles/mcu.elf.dir/user/mcp41050.c.obj.requires:
+
+.PHONY : CMakeFiles/mcu.elf.dir/user/mcp41050.c.obj.requires
+
+CMakeFiles/mcu.elf.dir/user/mcp41050.c.obj.provides: CMakeFiles/mcu.elf.dir/user/mcp41050.c.obj.requires
+	$(MAKE) -f CMakeFiles/mcu.elf.dir/build.make CMakeFiles/mcu.elf.dir/user/mcp41050.c.obj.provides.build
+.PHONY : CMakeFiles/mcu.elf.dir/user/mcp41050.c.obj.provides
+
+CMakeFiles/mcu.elf.dir/user/mcp41050.c.obj.provides.build: CMakeFiles/mcu.elf.dir/user/mcp41050.c.obj
+
+
+CMakeFiles/mcu.elf.dir/user/pid.c.obj: CMakeFiles/mcu.elf.dir/flags.make
+CMakeFiles/mcu.elf.dir/user/pid.c.obj: ../user/pid.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sunqi/CLionProjects/mcu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/mcu.elf.dir/user/pid.c.obj"
+	/home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mcu.elf.dir/user/pid.c.obj   -c /home/sunqi/CLionProjects/mcu/user/pid.c
+
+CMakeFiles/mcu.elf.dir/user/pid.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mcu.elf.dir/user/pid.c.i"
+	/home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/sunqi/CLionProjects/mcu/user/pid.c > CMakeFiles/mcu.elf.dir/user/pid.c.i
+
+CMakeFiles/mcu.elf.dir/user/pid.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mcu.elf.dir/user/pid.c.s"
+	/home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/sunqi/CLionProjects/mcu/user/pid.c -o CMakeFiles/mcu.elf.dir/user/pid.c.s
+
+CMakeFiles/mcu.elf.dir/user/pid.c.obj.requires:
+
+.PHONY : CMakeFiles/mcu.elf.dir/user/pid.c.obj.requires
+
+CMakeFiles/mcu.elf.dir/user/pid.c.obj.provides: CMakeFiles/mcu.elf.dir/user/pid.c.obj.requires
+	$(MAKE) -f CMakeFiles/mcu.elf.dir/build.make CMakeFiles/mcu.elf.dir/user/pid.c.obj.provides.build
+.PHONY : CMakeFiles/mcu.elf.dir/user/pid.c.obj.provides
+
+CMakeFiles/mcu.elf.dir/user/pid.c.obj.provides.build: CMakeFiles/mcu.elf.dir/user/pid.c.obj
+
+
+CMakeFiles/mcu.elf.dir/user/spi.c.obj: CMakeFiles/mcu.elf.dir/flags.make
+CMakeFiles/mcu.elf.dir/user/spi.c.obj: ../user/spi.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sunqi/CLionProjects/mcu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/mcu.elf.dir/user/spi.c.obj"
+	/home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mcu.elf.dir/user/spi.c.obj   -c /home/sunqi/CLionProjects/mcu/user/spi.c
+
+CMakeFiles/mcu.elf.dir/user/spi.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mcu.elf.dir/user/spi.c.i"
+	/home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/sunqi/CLionProjects/mcu/user/spi.c > CMakeFiles/mcu.elf.dir/user/spi.c.i
+
+CMakeFiles/mcu.elf.dir/user/spi.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mcu.elf.dir/user/spi.c.s"
+	/home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/sunqi/CLionProjects/mcu/user/spi.c -o CMakeFiles/mcu.elf.dir/user/spi.c.s
+
+CMakeFiles/mcu.elf.dir/user/spi.c.obj.requires:
+
+.PHONY : CMakeFiles/mcu.elf.dir/user/spi.c.obj.requires
+
+CMakeFiles/mcu.elf.dir/user/spi.c.obj.provides: CMakeFiles/mcu.elf.dir/user/spi.c.obj.requires
+	$(MAKE) -f CMakeFiles/mcu.elf.dir/build.make CMakeFiles/mcu.elf.dir/user/spi.c.obj.provides.build
+.PHONY : CMakeFiles/mcu.elf.dir/user/spi.c.obj.provides
+
+CMakeFiles/mcu.elf.dir/user/spi.c.obj.provides.build: CMakeFiles/mcu.elf.dir/user/spi.c.obj
+
+
 CMakeFiles/mcu.elf.dir/user/sram.c.obj: CMakeFiles/mcu.elf.dir/flags.make
 CMakeFiles/mcu.elf.dir/user/sram.c.obj: ../user/sram.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sunqi/CLionProjects/mcu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/mcu.elf.dir/user/sram.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sunqi/CLionProjects/mcu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/mcu.elf.dir/user/sram.c.obj"
 	/home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mcu.elf.dir/user/sram.c.obj   -c /home/sunqi/CLionProjects/mcu/user/sram.c
 
 CMakeFiles/mcu.elf.dir/user/sram.c.i: cmake_force
@@ -267,7 +339,7 @@ CMakeFiles/mcu.elf.dir/user/sram.c.obj.provides.build: CMakeFiles/mcu.elf.dir/us
 
 CMakeFiles/mcu.elf.dir/user/sys.c.obj: CMakeFiles/mcu.elf.dir/flags.make
 CMakeFiles/mcu.elf.dir/user/sys.c.obj: ../user/sys.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sunqi/CLionProjects/mcu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/mcu.elf.dir/user/sys.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sunqi/CLionProjects/mcu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/mcu.elf.dir/user/sys.c.obj"
 	/home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mcu.elf.dir/user/sys.c.obj   -c /home/sunqi/CLionProjects/mcu/user/sys.c
 
 CMakeFiles/mcu.elf.dir/user/sys.c.i: cmake_force
@@ -291,7 +363,7 @@ CMakeFiles/mcu.elf.dir/user/sys.c.obj.provides.build: CMakeFiles/mcu.elf.dir/use
 
 CMakeFiles/mcu.elf.dir/user/usart.c.obj: CMakeFiles/mcu.elf.dir/flags.make
 CMakeFiles/mcu.elf.dir/user/usart.c.obj: ../user/usart.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sunqi/CLionProjects/mcu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/mcu.elf.dir/user/usart.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sunqi/CLionProjects/mcu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/mcu.elf.dir/user/usart.c.obj"
 	/home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mcu.elf.dir/user/usart.c.obj   -c /home/sunqi/CLionProjects/mcu/user/usart.c
 
 CMakeFiles/mcu.elf.dir/user/usart.c.i: cmake_force
@@ -315,7 +387,7 @@ CMakeFiles/mcu.elf.dir/user/usart.c.obj.provides.build: CMakeFiles/mcu.elf.dir/u
 
 CMakeFiles/mcu.elf.dir/user/wdg.c.obj: CMakeFiles/mcu.elf.dir/flags.make
 CMakeFiles/mcu.elf.dir/user/wdg.c.obj: ../user/wdg.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sunqi/CLionProjects/mcu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/mcu.elf.dir/user/wdg.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sunqi/CLionProjects/mcu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/mcu.elf.dir/user/wdg.c.obj"
 	/home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mcu.elf.dir/user/wdg.c.obj   -c /home/sunqi/CLionProjects/mcu/user/wdg.c
 
 CMakeFiles/mcu.elf.dir/user/wdg.c.i: cmake_force
@@ -339,7 +411,7 @@ CMakeFiles/mcu.elf.dir/user/wdg.c.obj.provides.build: CMakeFiles/mcu.elf.dir/use
 
 CMakeFiles/mcu.elf.dir/stdlib/Src/misc.c.obj: CMakeFiles/mcu.elf.dir/flags.make
 CMakeFiles/mcu.elf.dir/stdlib/Src/misc.c.obj: ../stdlib/Src/misc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sunqi/CLionProjects/mcu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/mcu.elf.dir/stdlib/Src/misc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sunqi/CLionProjects/mcu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/mcu.elf.dir/stdlib/Src/misc.c.obj"
 	/home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mcu.elf.dir/stdlib/Src/misc.c.obj   -c /home/sunqi/CLionProjects/mcu/stdlib/Src/misc.c
 
 CMakeFiles/mcu.elf.dir/stdlib/Src/misc.c.i: cmake_force
@@ -363,7 +435,7 @@ CMakeFiles/mcu.elf.dir/stdlib/Src/misc.c.obj.provides.build: CMakeFiles/mcu.elf.
 
 CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_adc.c.obj: CMakeFiles/mcu.elf.dir/flags.make
 CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_adc.c.obj: ../stdlib/Src/stm32f10x_adc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sunqi/CLionProjects/mcu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_adc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sunqi/CLionProjects/mcu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_adc.c.obj"
 	/home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_adc.c.obj   -c /home/sunqi/CLionProjects/mcu/stdlib/Src/stm32f10x_adc.c
 
 CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_adc.c.i: cmake_force
@@ -387,7 +459,7 @@ CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_adc.c.obj.provides.build: CMakeFiles
 
 CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_bkp.c.obj: CMakeFiles/mcu.elf.dir/flags.make
 CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_bkp.c.obj: ../stdlib/Src/stm32f10x_bkp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sunqi/CLionProjects/mcu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_bkp.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sunqi/CLionProjects/mcu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_bkp.c.obj"
 	/home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_bkp.c.obj   -c /home/sunqi/CLionProjects/mcu/stdlib/Src/stm32f10x_bkp.c
 
 CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_bkp.c.i: cmake_force
@@ -411,7 +483,7 @@ CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_bkp.c.obj.provides.build: CMakeFiles
 
 CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_can.c.obj: CMakeFiles/mcu.elf.dir/flags.make
 CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_can.c.obj: ../stdlib/Src/stm32f10x_can.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sunqi/CLionProjects/mcu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_can.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sunqi/CLionProjects/mcu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_can.c.obj"
 	/home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_can.c.obj   -c /home/sunqi/CLionProjects/mcu/stdlib/Src/stm32f10x_can.c
 
 CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_can.c.i: cmake_force
@@ -435,7 +507,7 @@ CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_can.c.obj.provides.build: CMakeFiles
 
 CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_cec.c.obj: CMakeFiles/mcu.elf.dir/flags.make
 CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_cec.c.obj: ../stdlib/Src/stm32f10x_cec.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sunqi/CLionProjects/mcu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_cec.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sunqi/CLionProjects/mcu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_cec.c.obj"
 	/home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_cec.c.obj   -c /home/sunqi/CLionProjects/mcu/stdlib/Src/stm32f10x_cec.c
 
 CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_cec.c.i: cmake_force
@@ -459,7 +531,7 @@ CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_cec.c.obj.provides.build: CMakeFiles
 
 CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_crc.c.obj: CMakeFiles/mcu.elf.dir/flags.make
 CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_crc.c.obj: ../stdlib/Src/stm32f10x_crc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sunqi/CLionProjects/mcu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_crc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sunqi/CLionProjects/mcu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_crc.c.obj"
 	/home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_crc.c.obj   -c /home/sunqi/CLionProjects/mcu/stdlib/Src/stm32f10x_crc.c
 
 CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_crc.c.i: cmake_force
@@ -483,7 +555,7 @@ CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_crc.c.obj.provides.build: CMakeFiles
 
 CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_dac.c.obj: CMakeFiles/mcu.elf.dir/flags.make
 CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_dac.c.obj: ../stdlib/Src/stm32f10x_dac.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sunqi/CLionProjects/mcu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_dac.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sunqi/CLionProjects/mcu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_dac.c.obj"
 	/home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_dac.c.obj   -c /home/sunqi/CLionProjects/mcu/stdlib/Src/stm32f10x_dac.c
 
 CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_dac.c.i: cmake_force
@@ -507,7 +579,7 @@ CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_dac.c.obj.provides.build: CMakeFiles
 
 CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_dbgmcu.c.obj: CMakeFiles/mcu.elf.dir/flags.make
 CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_dbgmcu.c.obj: ../stdlib/Src/stm32f10x_dbgmcu.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sunqi/CLionProjects/mcu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_dbgmcu.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sunqi/CLionProjects/mcu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_dbgmcu.c.obj"
 	/home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_dbgmcu.c.obj   -c /home/sunqi/CLionProjects/mcu/stdlib/Src/stm32f10x_dbgmcu.c
 
 CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_dbgmcu.c.i: cmake_force
@@ -531,7 +603,7 @@ CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_dbgmcu.c.obj.provides.build: CMakeFi
 
 CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_dma.c.obj: CMakeFiles/mcu.elf.dir/flags.make
 CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_dma.c.obj: ../stdlib/Src/stm32f10x_dma.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sunqi/CLionProjects/mcu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_dma.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sunqi/CLionProjects/mcu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_dma.c.obj"
 	/home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_dma.c.obj   -c /home/sunqi/CLionProjects/mcu/stdlib/Src/stm32f10x_dma.c
 
 CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_dma.c.i: cmake_force
@@ -555,7 +627,7 @@ CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_dma.c.obj.provides.build: CMakeFiles
 
 CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_exti.c.obj: CMakeFiles/mcu.elf.dir/flags.make
 CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_exti.c.obj: ../stdlib/Src/stm32f10x_exti.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sunqi/CLionProjects/mcu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_exti.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sunqi/CLionProjects/mcu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_exti.c.obj"
 	/home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_exti.c.obj   -c /home/sunqi/CLionProjects/mcu/stdlib/Src/stm32f10x_exti.c
 
 CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_exti.c.i: cmake_force
@@ -579,7 +651,7 @@ CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_exti.c.obj.provides.build: CMakeFile
 
 CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_flash.c.obj: CMakeFiles/mcu.elf.dir/flags.make
 CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_flash.c.obj: ../stdlib/Src/stm32f10x_flash.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sunqi/CLionProjects/mcu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_flash.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sunqi/CLionProjects/mcu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_flash.c.obj"
 	/home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_flash.c.obj   -c /home/sunqi/CLionProjects/mcu/stdlib/Src/stm32f10x_flash.c
 
 CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_flash.c.i: cmake_force
@@ -603,7 +675,7 @@ CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_flash.c.obj.provides.build: CMakeFil
 
 CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_fsmc.c.obj: CMakeFiles/mcu.elf.dir/flags.make
 CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_fsmc.c.obj: ../stdlib/Src/stm32f10x_fsmc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sunqi/CLionProjects/mcu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_fsmc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sunqi/CLionProjects/mcu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_fsmc.c.obj"
 	/home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_fsmc.c.obj   -c /home/sunqi/CLionProjects/mcu/stdlib/Src/stm32f10x_fsmc.c
 
 CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_fsmc.c.i: cmake_force
@@ -627,7 +699,7 @@ CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_fsmc.c.obj.provides.build: CMakeFile
 
 CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_gpio.c.obj: CMakeFiles/mcu.elf.dir/flags.make
 CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_gpio.c.obj: ../stdlib/Src/stm32f10x_gpio.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sunqi/CLionProjects/mcu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_gpio.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sunqi/CLionProjects/mcu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_gpio.c.obj"
 	/home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_gpio.c.obj   -c /home/sunqi/CLionProjects/mcu/stdlib/Src/stm32f10x_gpio.c
 
 CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_gpio.c.i: cmake_force
@@ -651,7 +723,7 @@ CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_gpio.c.obj.provides.build: CMakeFile
 
 CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_i2c.c.obj: CMakeFiles/mcu.elf.dir/flags.make
 CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_i2c.c.obj: ../stdlib/Src/stm32f10x_i2c.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sunqi/CLionProjects/mcu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_i2c.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sunqi/CLionProjects/mcu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_i2c.c.obj"
 	/home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_i2c.c.obj   -c /home/sunqi/CLionProjects/mcu/stdlib/Src/stm32f10x_i2c.c
 
 CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_i2c.c.i: cmake_force
@@ -675,7 +747,7 @@ CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_i2c.c.obj.provides.build: CMakeFiles
 
 CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_iwdg.c.obj: CMakeFiles/mcu.elf.dir/flags.make
 CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_iwdg.c.obj: ../stdlib/Src/stm32f10x_iwdg.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sunqi/CLionProjects/mcu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_iwdg.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sunqi/CLionProjects/mcu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_iwdg.c.obj"
 	/home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_iwdg.c.obj   -c /home/sunqi/CLionProjects/mcu/stdlib/Src/stm32f10x_iwdg.c
 
 CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_iwdg.c.i: cmake_force
@@ -699,7 +771,7 @@ CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_iwdg.c.obj.provides.build: CMakeFile
 
 CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_pwr.c.obj: CMakeFiles/mcu.elf.dir/flags.make
 CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_pwr.c.obj: ../stdlib/Src/stm32f10x_pwr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sunqi/CLionProjects/mcu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_pwr.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sunqi/CLionProjects/mcu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_pwr.c.obj"
 	/home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_pwr.c.obj   -c /home/sunqi/CLionProjects/mcu/stdlib/Src/stm32f10x_pwr.c
 
 CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_pwr.c.i: cmake_force
@@ -723,7 +795,7 @@ CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_pwr.c.obj.provides.build: CMakeFiles
 
 CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_rcc.c.obj: CMakeFiles/mcu.elf.dir/flags.make
 CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_rcc.c.obj: ../stdlib/Src/stm32f10x_rcc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sunqi/CLionProjects/mcu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_rcc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sunqi/CLionProjects/mcu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_rcc.c.obj"
 	/home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_rcc.c.obj   -c /home/sunqi/CLionProjects/mcu/stdlib/Src/stm32f10x_rcc.c
 
 CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_rcc.c.i: cmake_force
@@ -747,7 +819,7 @@ CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_rcc.c.obj.provides.build: CMakeFiles
 
 CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_rtc.c.obj: CMakeFiles/mcu.elf.dir/flags.make
 CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_rtc.c.obj: ../stdlib/Src/stm32f10x_rtc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sunqi/CLionProjects/mcu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_rtc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sunqi/CLionProjects/mcu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_rtc.c.obj"
 	/home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_rtc.c.obj   -c /home/sunqi/CLionProjects/mcu/stdlib/Src/stm32f10x_rtc.c
 
 CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_rtc.c.i: cmake_force
@@ -771,7 +843,7 @@ CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_rtc.c.obj.provides.build: CMakeFiles
 
 CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_sdio.c.obj: CMakeFiles/mcu.elf.dir/flags.make
 CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_sdio.c.obj: ../stdlib/Src/stm32f10x_sdio.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sunqi/CLionProjects/mcu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_sdio.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sunqi/CLionProjects/mcu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_sdio.c.obj"
 	/home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_sdio.c.obj   -c /home/sunqi/CLionProjects/mcu/stdlib/Src/stm32f10x_sdio.c
 
 CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_sdio.c.i: cmake_force
@@ -795,7 +867,7 @@ CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_sdio.c.obj.provides.build: CMakeFile
 
 CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_spi.c.obj: CMakeFiles/mcu.elf.dir/flags.make
 CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_spi.c.obj: ../stdlib/Src/stm32f10x_spi.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sunqi/CLionProjects/mcu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_spi.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sunqi/CLionProjects/mcu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_spi.c.obj"
 	/home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_spi.c.obj   -c /home/sunqi/CLionProjects/mcu/stdlib/Src/stm32f10x_spi.c
 
 CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_spi.c.i: cmake_force
@@ -819,7 +891,7 @@ CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_spi.c.obj.provides.build: CMakeFiles
 
 CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_tim.c.obj: CMakeFiles/mcu.elf.dir/flags.make
 CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_tim.c.obj: ../stdlib/Src/stm32f10x_tim.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sunqi/CLionProjects/mcu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_tim.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sunqi/CLionProjects/mcu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_tim.c.obj"
 	/home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_tim.c.obj   -c /home/sunqi/CLionProjects/mcu/stdlib/Src/stm32f10x_tim.c
 
 CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_tim.c.i: cmake_force
@@ -843,7 +915,7 @@ CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_tim.c.obj.provides.build: CMakeFiles
 
 CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_usart.c.obj: CMakeFiles/mcu.elf.dir/flags.make
 CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_usart.c.obj: ../stdlib/Src/stm32f10x_usart.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sunqi/CLionProjects/mcu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_usart.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sunqi/CLionProjects/mcu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_usart.c.obj"
 	/home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_usart.c.obj   -c /home/sunqi/CLionProjects/mcu/stdlib/Src/stm32f10x_usart.c
 
 CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_usart.c.i: cmake_force
@@ -867,7 +939,7 @@ CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_usart.c.obj.provides.build: CMakeFil
 
 CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_wwdg.c.obj: CMakeFiles/mcu.elf.dir/flags.make
 CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_wwdg.c.obj: ../stdlib/Src/stm32f10x_wwdg.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sunqi/CLionProjects/mcu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_wwdg.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sunqi/CLionProjects/mcu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_wwdg.c.obj"
 	/home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_wwdg.c.obj   -c /home/sunqi/CLionProjects/mcu/stdlib/Src/stm32f10x_wwdg.c
 
 CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_wwdg.c.i: cmake_force
@@ -891,7 +963,7 @@ CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_wwdg.c.obj.provides.build: CMakeFile
 
 CMakeFiles/mcu.elf.dir/stdlib/Src/system_stm32f10x.c.obj: CMakeFiles/mcu.elf.dir/flags.make
 CMakeFiles/mcu.elf.dir/stdlib/Src/system_stm32f10x.c.obj: ../stdlib/Src/system_stm32f10x.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sunqi/CLionProjects/mcu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/mcu.elf.dir/stdlib/Src/system_stm32f10x.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sunqi/CLionProjects/mcu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/mcu.elf.dir/stdlib/Src/system_stm32f10x.c.obj"
 	/home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mcu.elf.dir/stdlib/Src/system_stm32f10x.c.obj   -c /home/sunqi/CLionProjects/mcu/stdlib/Src/system_stm32f10x.c
 
 CMakeFiles/mcu.elf.dir/stdlib/Src/system_stm32f10x.c.i: cmake_force
@@ -923,6 +995,9 @@ mcu_elf_OBJECTS = \
 "CMakeFiles/mcu.elf.dir/user/key.c.obj" \
 "CMakeFiles/mcu.elf.dir/user/lcd.c.obj" \
 "CMakeFiles/mcu.elf.dir/user/led.c.obj" \
+"CMakeFiles/mcu.elf.dir/user/mcp41050.c.obj" \
+"CMakeFiles/mcu.elf.dir/user/pid.c.obj" \
+"CMakeFiles/mcu.elf.dir/user/spi.c.obj" \
 "CMakeFiles/mcu.elf.dir/user/sram.c.obj" \
 "CMakeFiles/mcu.elf.dir/user/sys.c.obj" \
 "CMakeFiles/mcu.elf.dir/user/usart.c.obj" \
@@ -963,6 +1038,9 @@ mcu.elf: CMakeFiles/mcu.elf.dir/user/delay.c.obj
 mcu.elf: CMakeFiles/mcu.elf.dir/user/key.c.obj
 mcu.elf: CMakeFiles/mcu.elf.dir/user/lcd.c.obj
 mcu.elf: CMakeFiles/mcu.elf.dir/user/led.c.obj
+mcu.elf: CMakeFiles/mcu.elf.dir/user/mcp41050.c.obj
+mcu.elf: CMakeFiles/mcu.elf.dir/user/pid.c.obj
+mcu.elf: CMakeFiles/mcu.elf.dir/user/spi.c.obj
 mcu.elf: CMakeFiles/mcu.elf.dir/user/sram.c.obj
 mcu.elf: CMakeFiles/mcu.elf.dir/user/sys.c.obj
 mcu.elf: CMakeFiles/mcu.elf.dir/user/usart.c.obj
@@ -993,7 +1071,7 @@ mcu.elf: CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_wwdg.c.obj
 mcu.elf: CMakeFiles/mcu.elf.dir/stdlib/Src/system_stm32f10x.c.obj
 mcu.elf: CMakeFiles/mcu.elf.dir/build.make
 mcu.elf: CMakeFiles/mcu.elf.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/sunqi/CLionProjects/mcu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Linking C executable mcu.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/sunqi/CLionProjects/mcu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Linking C executable mcu.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mcu.elf.dir/link.txt --verbose=$(VERBOSE)
 	/home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/bin/arm-none-eabi-objcopy -Oihex /home/sunqi/CLionProjects/mcu/build/mcu.elf /home/sunqi/CLionProjects/mcu/build/mcu.hex
 	/home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/bin/arm-none-eabi-objcopy -Obinary /home/sunqi/CLionProjects/mcu/build/mcu.elf /home/sunqi/CLionProjects/mcu/build/mcu.bin
@@ -1011,6 +1089,9 @@ CMakeFiles/mcu.elf.dir/requires: CMakeFiles/mcu.elf.dir/user/delay.c.obj.require
 CMakeFiles/mcu.elf.dir/requires: CMakeFiles/mcu.elf.dir/user/key.c.obj.requires
 CMakeFiles/mcu.elf.dir/requires: CMakeFiles/mcu.elf.dir/user/lcd.c.obj.requires
 CMakeFiles/mcu.elf.dir/requires: CMakeFiles/mcu.elf.dir/user/led.c.obj.requires
+CMakeFiles/mcu.elf.dir/requires: CMakeFiles/mcu.elf.dir/user/mcp41050.c.obj.requires
+CMakeFiles/mcu.elf.dir/requires: CMakeFiles/mcu.elf.dir/user/pid.c.obj.requires
+CMakeFiles/mcu.elf.dir/requires: CMakeFiles/mcu.elf.dir/user/spi.c.obj.requires
 CMakeFiles/mcu.elf.dir/requires: CMakeFiles/mcu.elf.dir/user/sram.c.obj.requires
 CMakeFiles/mcu.elf.dir/requires: CMakeFiles/mcu.elf.dir/user/sys.c.obj.requires
 CMakeFiles/mcu.elf.dir/requires: CMakeFiles/mcu.elf.dir/user/usart.c.obj.requires

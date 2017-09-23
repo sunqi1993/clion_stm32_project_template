@@ -1,59 +1,110 @@
-//
-// Created by sunqi on 17-8-28.
-//
+ #include "adc.h"
+ #include "delay.h"
+//////////////////////////////////////////////////////////////////////////////////	 
+//±¾³ÌĞòÖ»¹©Ñ§Ï°Ê¹ÓÃ£¬Î´¾­×÷ÕßĞí¿É£¬²»µÃÓÃÓÚÆäËüÈÎºÎÓÃÍ¾
+//ALIENTEKÕ½½¢STM32¿ª·¢°å
+//ADC ´úÂë	   
+//ÕıµãÔ­×Ó@ALIENTEK
+//¼¼ÊõÂÛÌ³:www.openedv.com
+//ĞŞ¸ÄÈÕÆÚ:2012/9/7
+//°æ±¾£ºV1.0
+//°æÈ¨ËùÓĞ£¬µÁ°æ±Ø¾¿¡£
+//Copyright(C) ¹ãÖİÊĞĞÇÒíµç×Ó¿Æ¼¼ÓĞÏŞ¹«Ë¾ 2009-2019
+//All rights reserved									  
+////////////////////////////////////////////////////////////////////////////////// 
+	   
+		   
+//³õÊ¼»¯ADC
+//ÕâÀïÎÒÃÇ½öÒÔ¹æÔòÍ¨µÀÎªÀı
+//ÎÒÃÇÄ¬ÈÏ½«¿ªÆôÍ¨µÀ0~3																	   
+void  Adc_Init(void)
+{ 	
+	ADC_InitTypeDef ADC_InitStructure; 
+	GPIO_InitTypeDef GPIO_InitStructure;
 
-#include "adc.h"
+	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA |RCC_APB2Periph_ADC1	, ENABLE );	  //Ê¹ÄÜADC1Í¨µÀÊ±ÖÓ
+ 
 
-/*é…ç½®ADCçš„ç«¯å£ ä»¥åŠå„ä¸ªæ¨¡å—çš„åˆå§‹åŒ–é…ç½®*/
-void adc_init()
+	RCC_ADCCLKConfig(RCC_PCLK2_Div6);   //ÉèÖÃADC·ÖÆµÒò×Ó6 72M/6=12,ADC×î´óÊ±¼ä²»ÄÜ³¬¹ı14M
+
+	//PA1 ×÷ÎªÄ£ÄâÍ¨µÀÊäÈëÒı½Å                         
+	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_1;
+	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AIN;		//Ä£ÄâÊäÈëÒı½Å
+	GPIO_Init(GPIOA, &GPIO_InitStructure);	
+
+	ADC_DeInit(ADC1);  //¸´Î»ADC1 
+
+	ADC_InitStructure.ADC_Mode = ADC_Mode_Independent;	//ADC¹¤×÷Ä£Ê½:ADC1ºÍADC2¹¤×÷ÔÚ¶ÀÁ¢Ä£Ê½
+	ADC_InitStructure.ADC_ScanConvMode = DISABLE;	//Ä£Êı×ª»»¹¤×÷ÔÚµ¥Í¨µÀÄ£Ê½
+	ADC_InitStructure.ADC_ContinuousConvMode = DISABLE;	//Ä£Êı×ª»»¹¤×÷ÔÚµ¥´Î×ª»»Ä£Ê½
+	ADC_InitStructure.ADC_ExternalTrigConv = ADC_ExternalTrigConv_None;	//×ª»»ÓÉÈí¼ş¶ø²»ÊÇÍâ²¿´¥·¢Æô¶¯
+	ADC_InitStructure.ADC_DataAlign = ADC_DataAlign_Right;	//ADCÊı¾İÓÒ¶ÔÆë
+	ADC_InitStructure.ADC_NbrOfChannel = 1;	//Ë³Ğò½øĞĞ¹æÔò×ª»»µÄADCÍ¨µÀµÄÊıÄ¿
+	ADC_Init(ADC1, &ADC_InitStructure);	//¸ù¾İADC_InitStructÖĞÖ¸¶¨µÄ²ÎÊı³õÊ¼»¯ÍâÉèADCxµÄ¼Ä´æÆ÷   
+
+  
+	ADC_Cmd(ADC1, ENABLE);	//Ê¹ÄÜÖ¸¶¨µÄADC1
+	
+	ADC_ResetCalibration(ADC1);	//Ê¹ÄÜ¸´Î»Ğ£×¼  
+	 
+	while(ADC_GetResetCalibrationStatus(ADC1));	//µÈ´ı¸´Î»Ğ£×¼½áÊø
+	
+	ADC_StartCalibration(ADC1);	 //¿ªÆôADĞ£×¼
+ 
+	while(ADC_GetCalibrationStatus(ADC1));	 //µÈ´ıĞ£×¼½áÊø
+ 
+//	ADC_SoftwareStartConvCmd(ADC1, ENABLE);		//Ê¹ÄÜÖ¸¶¨µÄADC1µÄÈí¼ş×ª»»Æô¶¯¹¦ÄÜ
+
+}				  
+//»ñµÃADCÖµ
+//ch:Í¨µÀÖµ 0~3
+u16 Get_Adc(u8 ch)   
 {
-    ADC_InitTypeDef ADC_InitStructure;
-    GPIO_InitTypeDef GPIO_InitStructure;
-    RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA|RCC_APB2Periph_ADC1,ENABLE);
-    RCC_ADCCLKConfig(RCC_PCLK2_Div6); //æ€»çº¿æ—¶é’Ÿ72M ADCæ—¶é’Ÿä¸èƒ½è¶…è¿‡14Mæ‰€ä»¥div6
+  	//ÉèÖÃÖ¸¶¨ADCµÄ¹æÔò×éÍ¨µÀ£¬Ò»¸öĞòÁĞ£¬²ÉÑùÊ±¼ä
+	ADC_RegularChannelConfig(ADC1, ch, 1, ADC_SampleTime_239Cycles5 );	//ADC1,ADCÍ¨µÀ,²ÉÑùÊ±¼äÎª239.5ÖÜÆÚ	  			    
+  
+	ADC_SoftwareStartConvCmd(ADC1, ENABLE);		//Ê¹ÄÜÖ¸¶¨µÄADC1µÄÈí¼ş×ª»»Æô¶¯¹¦ÄÜ	
+	 
+	while(!ADC_GetFlagStatus(ADC1, ADC_FLAG_EOC ));//µÈ´ı×ª»»½áÊø
 
-    //åˆå§‹åŒ–adcçš„è¾“å…¥ioå£çš„æ–¹å¼
-    GPIO_InitStructure.GPIO_Pin=GPIO_Pin_1;
-    GPIO_InitStructure.GPIO_Mode=GPIO_Mode_AIN; //æ¨¡æ‹Ÿè¾“å…¥
-    GPIO_InitStructure.GPIO_Speed=GPIO_Speed_50MHz;
-    GPIO_Init(GPIOA,&GPIO_InitStructure);
-    //å¤ä½ADC1
-    ADC_DeInit(ADC1);
-    ADC_InitStructure.ADC_Mode=ADC_Mode_Independent;
-    ADC_InitStructure.ADC_ContinuousConvMode=DISABLE;
-    ADC_InitStructure.ADC_DataAlign=ADC_DataAlign_Right;
-    ADC_InitStructure.ADC_NbrOfChannel=1;   //é¡ºåºè¿›è¡Œè§„åˆ™è½¬æ¢çš„ADCé€šé“çš„æ•°ç›®
-    ADC_InitStructure.ADC_ExternalTrigConv=ADC_ExternalTrigConv_None; //è½¯ä»¶è§¦å‘è½¬åŒ– è€Œä¸æ˜¯åˆ«çš„æ–¹å¼ å•æ¬¡æ¨¡å¼
-    ADC_InitStructure.ADC_ScanConvMode=DISABLE;
-    ADC_Init(ADC1,&ADC_InitStructure);
-    ADC_Cmd(ADC1,ENABLE);    //ADC1è¿›è¡Œä½¿èƒ½
-
-    ADC_ResetCalibration(ADC1); //å¼€å¯å¤ä½æ ¡å‡†
-    while (ADC_GetResetCalibrationStatus(ADC1));  //ç­‰å¾…æ ¡å‡†ç»“æŸ
-    ADC_StartCalibration(ADC1); //å¼€å¯ADæ ¡å‡†
-    while (ADC_GetCalibrationStatus(ADC1));      //ç­‰å¾…æ ¡å‡†ç»“æŸ
-
+	return ADC_GetConversionValue(ADC1);	//·µ»Ø×î½üÒ»´ÎADC1¹æÔò×éµÄ×ª»»½á¹û
 }
 
-u16 get_adc(u8 ch)
+u16 Get_Adc_Average(u8 ch,u8 times)
 {
-    ADC_RegularChannelConfig(ADC1,ch,1,ADC_SampleTime_239Cycles5);
-    ADC_SoftwareStartInjectedConvCmd(ADC1,ENABLE);
-    while (!ADC_GetFlagStatus(ADC1,ADC_FLAG_EOC));
-    return ADC_GetConversionValue(ADC1);
-}
+	u32 temp_val=0;
+	u8 t;
+	for(t=0;t<times;t++)
+	{
+		temp_val+=Get_Adc(ch);
+		delay_ms(5);
+	}
+	return temp_val/times;
+} 	 
 
 
-u16 get_adc_average(u8 ch,u8 times)
-{
-    u32 time_val=0;
-    u8 t;
-    for(t=0;t<times;t++)
-    {
-        time_val+=get_adc(ch);
-        //è¿™ä¸ªåœ°æ–¹ç”¨åˆ°äº†åˆå§‹åŒ–
-        delay_ms(5);
 
-    }
-    return time_val/times;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

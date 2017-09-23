@@ -1,4 +1,5 @@
 
+#include <pid.h>
 #include "sys.h"
 #include "delay.h"
 #include "led.h"
@@ -7,9 +8,9 @@
 #include "usart.h"
 #include "wdg.h"
 #include "lcd.h"
+#include "adc.h"
+#include "mcp41050.h"
 #define en_uartRx_irq 0
-
-
 /************************************************
 ALIENTEK战舰STM32开发板实验2
 蜂鸣器实验
@@ -322,7 +323,7 @@ void test_lcd(void)
             case 11:LCD_Clear(BROWN);break;
         }
         POINT_COLOR=RED;
-        LCD_ShowString(30,40,210,24,24,"WarShip STM32 ^_^");
+        LCD_ShowString(30,40,410,24,24,"WarShip STM32 ^_^ hello world heheheheh");
         LCD_ShowString(30,70,200,16,16,"TFTLCD TEST");
         LCD_ShowString(30,90,200,16,16,"ATOM@ALIENTEK");
         LCD_ShowString(30,110,200,16,16,lcd_id);		//显示LCD ID
@@ -334,11 +335,64 @@ void test_lcd(void)
 
     }
 }
+
+void show_adc_on_lcd()
+{
+    u8 x=0;
+    u16 adc_result;
+    u8 adc_str[16];
+    u8 lcd_id[12];			//存放LCD ID字符串
+    delay_init();	    	 //延时函数初始化
+
+    NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);	 //设置NVIC中断分组2:2位抢占优先级，2位响应优先级
+    uart_init(115200);	 	//串口初始化为115200
+    LED_Init();			     //LED端口初始化
+    LCD_Init();
+    Adc_Init();
+
+    POINT_COLOR=RED;
+    sprintf((char*)lcd_id,"LCD ID:%04X",lcddev.id);//将LCD ID打印到lcd_id数组。
+    LCD_Clear(LGRAY);
+    while(1)
+    {
+        LCD_ShowString(30,40,410,24,24,"WarShip STM32 ^_^ hello world heheheheh");
+        LCD_ShowString(30,70,200,16,16,"TFTLCD TEST");
+        LCD_ShowString(30,90,200,16,16,"ATOM@ALIENTEK");
+        LCD_ShowString(30,110,200,16,16,lcd_id);		//显示LCD ID
+        LCD_ShowString(30,130,200,12,12,"2014/5/4");
+
+        float temp=(float)Get_Adc(ADC_Channel_1)*(3.3/4096);
+        u16 integer=(int)temp;
+        u16 decimal=(int)((temp-integer)*1000);
+
+        sprintf(adc_str,"ADC input:%d.%3d",integer,decimal);
+        LCD_ShowString(30,150,200,16,16,adc_str);
+        delay_ms(1000);
+    }
+
+
+}
+
+void test_mcp41050()
+{
+    delay_init();
+    MCP_SPI_Init();
+    while(1)
+    {
+        mcp41050_set_Res(1);
+        delay_us(2000);
+    }
+}
+
+
 int  main(void)
 {
 //    test_timer3();
 
-    test_lcd();
+    //test_lcd();
+    //show_adc_on_lcd();
+    test_mcp41050();
     return 1;
 
 }
+

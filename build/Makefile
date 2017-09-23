@@ -969,6 +969,87 @@ user/led.c.s:
 	$(MAKE) -f CMakeFiles/mcu.elf.dir/build.make CMakeFiles/mcu.elf.dir/user/led.c.s
 .PHONY : user/led.c.s
 
+user/mcp41050.obj: user/mcp41050.c.obj
+
+.PHONY : user/mcp41050.obj
+
+# target to build an object file
+user/mcp41050.c.obj:
+	$(MAKE) -f CMakeFiles/mcu.elf.dir/build.make CMakeFiles/mcu.elf.dir/user/mcp41050.c.obj
+.PHONY : user/mcp41050.c.obj
+
+user/mcp41050.i: user/mcp41050.c.i
+
+.PHONY : user/mcp41050.i
+
+# target to preprocess a source file
+user/mcp41050.c.i:
+	$(MAKE) -f CMakeFiles/mcu.elf.dir/build.make CMakeFiles/mcu.elf.dir/user/mcp41050.c.i
+.PHONY : user/mcp41050.c.i
+
+user/mcp41050.s: user/mcp41050.c.s
+
+.PHONY : user/mcp41050.s
+
+# target to generate assembly for a file
+user/mcp41050.c.s:
+	$(MAKE) -f CMakeFiles/mcu.elf.dir/build.make CMakeFiles/mcu.elf.dir/user/mcp41050.c.s
+.PHONY : user/mcp41050.c.s
+
+user/pid.obj: user/pid.c.obj
+
+.PHONY : user/pid.obj
+
+# target to build an object file
+user/pid.c.obj:
+	$(MAKE) -f CMakeFiles/mcu.elf.dir/build.make CMakeFiles/mcu.elf.dir/user/pid.c.obj
+.PHONY : user/pid.c.obj
+
+user/pid.i: user/pid.c.i
+
+.PHONY : user/pid.i
+
+# target to preprocess a source file
+user/pid.c.i:
+	$(MAKE) -f CMakeFiles/mcu.elf.dir/build.make CMakeFiles/mcu.elf.dir/user/pid.c.i
+.PHONY : user/pid.c.i
+
+user/pid.s: user/pid.c.s
+
+.PHONY : user/pid.s
+
+# target to generate assembly for a file
+user/pid.c.s:
+	$(MAKE) -f CMakeFiles/mcu.elf.dir/build.make CMakeFiles/mcu.elf.dir/user/pid.c.s
+.PHONY : user/pid.c.s
+
+user/spi.obj: user/spi.c.obj
+
+.PHONY : user/spi.obj
+
+# target to build an object file
+user/spi.c.obj:
+	$(MAKE) -f CMakeFiles/mcu.elf.dir/build.make CMakeFiles/mcu.elf.dir/user/spi.c.obj
+.PHONY : user/spi.c.obj
+
+user/spi.i: user/spi.c.i
+
+.PHONY : user/spi.i
+
+# target to preprocess a source file
+user/spi.c.i:
+	$(MAKE) -f CMakeFiles/mcu.elf.dir/build.make CMakeFiles/mcu.elf.dir/user/spi.c.i
+.PHONY : user/spi.c.i
+
+user/spi.s: user/spi.c.s
+
+.PHONY : user/spi.s
+
+# target to generate assembly for a file
+user/spi.c.s:
+	$(MAKE) -f CMakeFiles/mcu.elf.dir/build.make CMakeFiles/mcu.elf.dir/user/spi.c.s
+.PHONY : user/spi.c.s
+
 user/sram.obj: user/sram.c.obj
 
 .PHONY : user/sram.obj
@@ -1180,6 +1261,15 @@ help:
 	@echo "... user/led.obj"
 	@echo "... user/led.i"
 	@echo "... user/led.s"
+	@echo "... user/mcp41050.obj"
+	@echo "... user/mcp41050.i"
+	@echo "... user/mcp41050.s"
+	@echo "... user/pid.obj"
+	@echo "... user/pid.i"
+	@echo "... user/pid.s"
+	@echo "... user/spi.obj"
+	@echo "... user/spi.i"
+	@echo "... user/spi.s"
 	@echo "... user/sram.obj"
 	@echo "... user/sram.i"
 	@echo "... user/sram.s"

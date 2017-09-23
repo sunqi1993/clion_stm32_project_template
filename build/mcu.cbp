@@ -202,6 +202,24 @@
 		<Unit filename="/home/sunqi/CLionProjects/mcu/user/led.h">
 			<Option target="mcu.elf"/>
 		</Unit>
+		<Unit filename="/home/sunqi/CLionProjects/mcu/user/mcp41050.c">
+			<Option target="mcu.elf"/>
+		</Unit>
+		<Unit filename="/home/sunqi/CLionProjects/mcu/user/mcp41050.h">
+			<Option target="mcu.elf"/>
+		</Unit>
+		<Unit filename="/home/sunqi/CLionProjects/mcu/user/pid.c">
+			<Option target="mcu.elf"/>
+		</Unit>
+		<Unit filename="/home/sunqi/CLionProjects/mcu/user/pid.h">
+			<Option target="mcu.elf"/>
+		</Unit>
+		<Unit filename="/home/sunqi/CLionProjects/mcu/user/spi.c">
+			<Option target="mcu.elf"/>
+		</Unit>
+		<Unit filename="/home/sunqi/CLionProjects/mcu/user/spi.h">
+			<Option target="mcu.elf"/>
+		</Unit>
 		<Unit filename="/home/sunqi/CLionProjects/mcu/user/sram.c">
 			<Option target="mcu.elf"/>
 		</Unit>
@@ -228,9 +246,6 @@
 		</Unit>
 		<Unit filename="/home/sunqi/CLionProjects/mcu/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
-		</Unit>
-		<Unit filename="/home/sunqi/CLionProjects/mcu/../../Desktop/mcu_proj/conf/toolchain-arm-eabi-gcc.cmake">
-			<Option virtualFolder="CMake Files\..\..\Desktop\mcu_proj\conf\"/>
 		</Unit>
 		<Unit filename="/home/sunqi/CLionProjects/mcu/../../Desktop/mcu_proj/conf/toolchain-arm-eabi-gcc.cmake">
 			<Option virtualFolder="CMake Files\..\..\Desktop\mcu_proj\conf\"/>

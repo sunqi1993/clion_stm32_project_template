@@ -9,7 +9,8 @@ enable_language(ASM)
 
 set(BUILD_MODE DEBUG)
 
-set(USER_C_FLAGS "-mcpu=cortex-m3 -mthumb -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall")
+set(USER_C_FLAGS "-mcpu=cortex-m3 -mthumb -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding \
+        -fno-move-loop-invariants -Wall")
 set(USER_CXX_FLAGS  "-std=c++11 -fabi-version=0 -fno-exceptions -fno-rtti -fno-use-cxa-atexit -fno-threadsafe-statics")
 #-DUSE_FULL_ASSERT \
 set(USER_C_DEFINES
@@ -45,7 +46,6 @@ file(GLOB_RECURSE SOURCE_FILES
         system/startup/startup_stm32f103xe.s
         main.c
         user/*.c
-        user/*.cpp
         stdlib/Src/*.c
 
         )
