@@ -45,7 +45,8 @@
 
 static u8  fac_us=0;							//us延时倍乘数			   
 static u16 fac_ms=0;							//ms延时倍乘数,在ucos下,代表每个节拍的ms数
-	
+
+static u8 delay_init_flag=0;
 	
 #if SYSTEM_SUPPORT_OS							//如果SYSTEM_SUPPORT_OS定义了,说明要支持OS了(不限于UCOS).
 //当delay_us/delay_ms需要支持OS的时候需要三个与OS相关的宏定义和函数来支持
@@ -127,6 +128,7 @@ void SysTick_Handler(void)
 //SYSCLK:系统时钟
 void delay_init()
 {
+    delay_init_flag=1;
 #if SYSTEM_SUPPORT_OS  							//如果需要支持OS.
 	u32 reload;
 #endif
@@ -146,6 +148,12 @@ void delay_init()
 	fac_ms=(u16)fac_us*1000;					//非OS下,代表每个ms需要的systick时钟数   
 #endif
 }								    
+
+void once_delayinit()
+{
+    if(delay_init_flag) return;
+    else delay_init();
+}
 
 #if SYSTEM_SUPPORT_OS  							//如果需要支持OS.
 //延时nus

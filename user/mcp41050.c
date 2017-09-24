@@ -2,24 +2,31 @@
 // Created by sunqi on 17-9-23.
 //
 
+#include <stm32f10x_conf.h>
 #include "mcp41050.h"
 #include "stm32f10x_spi.h"
-
+#include "delay.h"
 void MCP_SPI_Init()
 {
+    once_delayinit();
+
     GPIO_InitTypeDef GPIO_InitStructure;
     SPI_InitTypeDef  SPI_InitStructure;
 
     RCC_APB2PeriphClockCmd(	RCC_APB2Periph_GPIOB, ENABLE );//PORTB时钟使能
     RCC_APB1PeriphClockCmd(	RCC_APB1Periph_SPI2,  ENABLE );//SPI2时钟使能
 
-    GPIO_InitStructure.GPIO_Pin = CS_Pin|GPIO_Pin_13 | GPIO_Pin_14 | GPIO_Pin_15;
+    GPIO_InitStructure.GPIO_Pin = GPIO_Pin_13 | GPIO_Pin_14 | GPIO_Pin_15;
     GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_PP;  //PB13/14/15复用推挽输出
     GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
     GPIO_Init(GPIOB, &GPIO_InitStructure);//初始化GPIOB
 
+    GPIO_InitStructure.GPIO_Pin=CS_Pin;
+    GPIO_InitStructure.GPIO_Mode=GPIO_Mode_Out_PP;
+    GPIO_Init(GPIOB,&GPIO_InitStructure);
+
     GPIO_SetBits(GPIOB,CS_Pin);  // CS上拉
-    GPIO_ResetBits(GPIOB,GPIO_Pin_13|GPIO_Pin_15);   //clk si 下拉
+    GPIO_ResetBits(GPIOB,GPIO_Pin_13|GPIO_Pin_14|GPIO_Pin_15);   //clk si 下拉
 
     SPI_InitStructure.SPI_Direction = SPI_Direction_1Line_Tx;  //设置SPI单向或者双向的数据模式:SPI设置为只能发送
     SPI_InitStructure.SPI_Mode = SPI_Mode_Master;		//设置SPI工作模式:设置为主SPI
@@ -61,12 +68,9 @@ void mcp41050_writeWord(u16 TxData)
     CS_ON;  //开启片选写入数据
     SPI_I2S_SendData(SPI2, TxData); //通过外设SPIx发送一个数据
     //检查是否发送完毕
-    while (SPI_I2S_GetFlagStatus(SPI2, SPI_I2S_FLAG_TXE) == RESET) //检查指定的SPI标志位设置与否:发送缓存空标志位
-    {
-        retry++;
-        if(retry>200)
-            return;
-    }
+    while (SPI_I2S_GetFlagStatus(SPI2, SPI_I2S_FLAG_TXE) == RESET); //检查指定的SPI标志位设置与否:发送缓存空标志位
+
+    delay_us(120);  //使用示波器观察到的间隙
     CS_OFF; //关闭片选
 
 }

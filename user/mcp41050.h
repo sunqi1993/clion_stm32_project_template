@@ -9,14 +9,14 @@
  *
  * 本程序是用来使用MCP41050的参数设置
  * 引脚定义：
- * CS :   PTB14
+ * CS :   PTB12
  * SCLK : PTB13
  * SI：   PTB15
  *
  * 对于这款芯片来说 CPOL=0 CPHA=0
  *
  */
-#define MCP41050_CS_Port 14            //片选端口引脚
+#define MCP41050_CS_Port 12            //片选端口引脚
 #define CS_Pin  ((u16)0x01<<MCP41050_CS_Port)  //对应的CPIO_Pin
 #define CS PBout(MCP41050_CS_Port)     //片选端口输出设置寄存器
 #define CS_ON (CS=0)     //开启片选端口
