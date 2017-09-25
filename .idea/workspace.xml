@@ -2,8 +2,8 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
     <generated>
-      <config projectName="mcu" targetName="mcu" />
       <config projectName="mcu" targetName="mcu.elf" />
+      <config projectName="mcu" targetName="mcu" />
     </generated>
   </component>
   <component name="CMakeSettings" AUTO_RELOAD="true">
@@ -13,9 +13,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d8dfa1d-6399-4291-900b-8f4e5c229b79" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ReadMe" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gdbinit" afterPath="$PROJECT_DIR$/.gdbinit" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/CMakeFiles/mcu.elf.dir/depend.make" afterPath="$PROJECT_DIR$/build/CMakeFiles/mcu.elf.dir/depend.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build_project.sh" afterPath="$PROJECT_DIR$/build_project.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.c" afterPath="$PROJECT_DIR$/main.c" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stdlib/Inc/stm32f10x.h" afterPath="$PROJECT_DIR$/stdlib/Inc/stm32f10x.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/delay.c" afterPath="$PROJECT_DIR$/user/delay.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/delay.h" afterPath="$PROJECT_DIR$/user/delay.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/mcp41050.c" afterPath="$PROJECT_DIR$/user/mcp41050.c" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/mcp41050.h" afterPath="$PROJECT_DIR$/user/mcp41050.h" />
     </list>
@@ -33,41 +38,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="41" lean-forward="false" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="mcp41050.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/user/mcp41050.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="18" column="27" lean-forward="false" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
+            <state relative-caret-position="495">
+              <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="led.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/user/led.h">
+      <file leaf-file-name="stdint-gcc.h" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/program/gcc-arm-none-eabi-5_4-2016q3/lib/gcc/arm-none-eabi/5.4.1/include/stdint-gcc.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="15" lean-forward="true" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="led.c" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/user/led.c">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="25" column="50" lean-forward="false" selection-start-line="25" selection-start-column="50" selection-end-line="25" selection-end-column="50" />
+            <state relative-caret-position="400">
+              <caret line="44" column="12" lean-forward="false" selection-start-line="44" selection-start-column="12" selection-end-line="44" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -76,31 +61,11 @@
       <file leaf-file-name="mcp41050.c" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/user/mcp41050.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="58" column="50" lean-forward="true" selection-start-line="58" selection-start-column="50" selection-end-line="58" selection-end-column="50" />
+            <state relative-caret-position="420">
+              <caret line="91" column="5" lean-forward="false" selection-start-line="91" selection-start-column="5" selection-end-line="91" selection-end-column="5" />
               <folding>
                 <element signature="e#39#66#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gdbinit" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gdbinit">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="stm32f10x.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/stdlib/Inc/stm32f10x.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="518" column="14" lean-forward="false" selection-start-line="518" selection-start-column="14" selection-end-line="518" selection-end-column="14" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -109,7 +74,7 @@
         <entry file="file://$PROJECT_DIR$/main.c">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="405">
-              <caret line="393" column="0" lean-forward="false" selection-start-line="393" selection-start-column="0" selection-end-line="393" selection-end-column="0" />
+              <caret line="399" column="6" lean-forward="false" selection-start-line="399" selection-start-column="6" selection-end-line="399" selection-end-column="6" />
               <folding>
                 <element signature="e#1#17#0" expanded="true" />
                 <element signature="e#509#2120#0" expanded="false" />
@@ -118,7 +83,6 @@
                 <element signature="e#3054#3830#0" expanded="false" />
                 <element signature="e#3832#4775#0" expanded="false" />
                 <element signature="e#4777#4919#0" expanded="false" />
-                <element signature="e#4921#5149#0" expanded="false" />
                 <element signature="e#5151#5543#0" expanded="false" />
                 <element signature="e#5545#6396#0" expanded="false" />
                 <element signature="e#6397#6577#0" expanded="false" />
@@ -128,21 +92,61 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="delay.c" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/user/delay.c">
+      <file leaf-file-name="ReadMe" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ReadMe">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="77">
-              <caret line="151" column="0" lean-forward="false" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="21" />
+            <state relative-caret-position="15">
+              <caret line="1" column="26" lean-forward="false" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="delay.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/user/delay.h">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="45" column="22" lean-forward="true" selection-start-line="45" selection-start-column="22" selection-end-line="45" selection-end-column="22" />
+            <state relative-caret-position="150">
+              <caret line="10" column="37" lean-forward="false" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gdbinit" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gdbinit">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="41" lean-forward="false" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build_project.sh" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/build_project.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="42" lean-forward="true" selection-start-line="1" selection-start-column="42" selection-end-line="1" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cmake_install.cmake" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build/cmake_install.cmake">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="480">
+              <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CMakeCache.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build/CMakeCache.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-8517">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -184,13 +188,10 @@
         <option value="$PROJECT_DIR$/user/usart.c" />
         <option value="$PROJECT_DIR$/.wgdbinit" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/stdlib/Inc/stm32f10x.h" />
         <option value="$PROJECT_DIR$/.gdbinit1" />
-        <option value="$PROJECT_DIR$/.gdbinit" />
         <option value="$PROJECT_DIR$/user/font.h" />
         <option value="$PROJECT_DIR$/user/lcd.h" />
         <option value="$PROJECT_DIR$/user/lcd.c" />
-        <option value="$PROJECT_DIR$/build_project.sh" />
         <option value="$PROJECT_DIR$/user/pid.cpp" />
         <option value="$PROJECT_DIR$/user/pid.h" />
         <option value="$PROJECT_DIR$/user/pid.c" />
@@ -198,12 +199,17 @@
         <option value="$PROJECT_DIR$/user/adc.h" />
         <option value="$PROJECT_DIR$/user/spi.h" />
         <option value="$PROJECT_DIR$/user/spi.c" />
-        <option value="$PROJECT_DIR$/main.c" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/user/mcp41050.h" />
-        <option value="$PROJECT_DIR$/user/delay.c" />
         <option value="$PROJECT_DIR$/user/delay.h" />
+        <option value="$PROJECT_DIR$/user/delay.c" />
         <option value="$PROJECT_DIR$/user/mcp41050.c" />
+        <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/ReadMe" />
+        <option value="$PROJECT_DIR$/.gdbinit" />
+        <option value="$PROJECT_DIR$/user/mcp41050.h" />
+        <option value="$PROJECT_DIR$/stdlib/Inc/stm32f10x.h" />
+        <option value="$PROJECT_DIR$/main.c" />
+        <option value="$PROJECT_DIR$/build_project.sh" />
       </list>
     </option>
   </component>
@@ -235,6 +241,9 @@
         </selected-state>
       </profile-state>
     </entry>
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -271,7 +280,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="CPPToolchains" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
     <property name="last_opened_file_path" value="/usr/bin/zsh" />
     <property name="nodejs.protractor.protractor_package" value="" />
     <property name="TODO_SCOPE" value="All Places" />
@@ -305,10 +314,14 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="false" />
       </method>
     </configuration>
-    <configuration name="mcu remote debug" type="CLion_Remote" factoryName="GDB Remote Debug" singleton="true" debugger="$USER_HOME$/program/gcc-arm-none-eabi-5_4-2016q3/bin/arm-none-eabi-gdb" remoteCommand="localhost: 3333  " symbolFile="$PROJECT_DIR$/build/mcu.elf" sysroot="" />
+    <configuration name="mcu remote debug" type="CLion_Remote" factoryName="GDB Remote Debug" singleton="true" debugger="$USER_HOME$/program/gcc-arm-none-eabi-5_4-2016q3/bin/arm-none-eabi-gdb" remoteCommand="localhost: 3333  " symbolFile="$PROJECT_DIR$/build/mcu.elf" sysroot="">
+      <method>
+        <option name="ToolBeforeRunTask" enabled="true" actionId="Tool_External Tools_build_project" />
+      </method>
+    </configuration>
     <list size="2">
-      <item index="0" class="java.lang.String" itemvalue="GDB Remote Debug.mcu remote debug" />
-      <item index="1" class="java.lang.String" itemvalue="Application.Build All" />
+      <item index="0" class="java.lang.String" itemvalue="Application.Build All" />
+      <item index="1" class="java.lang.String" itemvalue="GDB Remote Debug.mcu remote debug" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
@@ -352,7 +365,7 @@
       <workItem from="1506043986615" duration="27846000" />
       <workItem from="1506134426619" duration="14222000" />
       <workItem from="1506168931329" duration="191000" />
-      <workItem from="1506216366330" duration="6741000" />
+      <workItem from="1506216366330" duration="18299000" />
     </task>
     <task id="LOCAL-00001" summary="第二次">
       <created>1505742975995</created>
@@ -431,11 +444,18 @@
       <option name="project" value="LOCAL" />
       <updated>1506151570657</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="修复MCP41050 SPI的bug TXE置位以后 其实SPI的数据还完全没有发完到数据口上">
+      <created>1506238043964</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1506238043964</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="209522000" />
+    <option name="totallyTimeSpent" value="221080000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -450,16 +470,17 @@
     <frame x="155" y="23" width="1366" height="725" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26742426" sideWeight="0.46333334" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47975078" sideWeight="0.48636365" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47913188" sideWeight="0.48636365" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47078463" sideWeight="0.45757577" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36292836" sideWeight="0.48181817" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.49081802" sideWeight="0.55227274" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32387313" sideWeight="0.4689394" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2654424" sideWeight="0.47121212" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.48969072" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2654424" sideWeight="0.47121212" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39398998" sideWeight="0.4848485" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26136363" sideWeight="0.5366667" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26742426" sideWeight="0.45075125" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2538941" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.48247078" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26742426" sideWeight="0.54924875" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.49081802" sideWeight="0.44772726" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -467,7 +488,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2538941" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -518,7 +538,8 @@
     <MESSAGE value="修改.gdbinit和IDE部分设置" />
     <MESSAGE value="remote debug内启动前会使用手动的编译脚本,这个比较简陋 重新编译所有文件，而不是只编译改动的文件。" />
     <MESSAGE value="增加了MCP41050变阻器的驱动程序" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加了MCP41050变阻器的驱动程序" />
+    <MESSAGE value="修复MCP41050 SPI的bug TXE置位以后 其实SPI的数据还完全没有发完到数据口上" />
+    <option name="LAST_COMMIT_MESSAGE" value="修复MCP41050 SPI的bug TXE置位以后 其实SPI的数据还完全没有发完到数据口上" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -540,7 +561,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/main.c</url>
-          <line>394</line>
+          <line>399</line>
           <option name="timeStamp" value="117" />
         </line-breakpoint>
       </breakpoints>
@@ -554,32 +575,11 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="128" />
+      <option name="time" value="129" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/user/wdg.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="15" lean-forward="false" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user/key.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="466">
-          <caret line="57" column="1" lean-forward="true" selection-start-line="57" selection-start-column="1" selection-end-line="57" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user/beep.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/user/beep.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -619,13 +619,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="23" column="20" lean-forward="false" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="37" lean-forward="false" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -679,20 +672,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gdbinit1" />
-    <entry file="file://$PROJECT_DIR$/toolchain-arm-eabi-gcc.cmake">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="1" lean-forward="false" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build_project.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="4" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/system/startup/startup_stm32f103xe.s">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="98">
@@ -704,14 +683,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="90" column="0" lean-forward="false" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user/lcd.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="83" column="3" lean-forward="false" selection-start-line="83" selection-start-column="3" selection-end-line="83" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -765,24 +736,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/nano.save" />
-    <entry file="file://$PROJECT_DIR$/build/CMakeCache.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build/CMakeFiles/3.8.2/CMakeSystem.cmake">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/cmake_install.cmake">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="13" column="8" lean-forward="true" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -830,7 +787,7 @@
         <state relative-caret-position="76">
           <caret line="170" column="5" lean-forward="false" selection-start-line="170" selection-start-column="5" selection-end-line="170" selection-end-column="5" />
           <folding>
-            <element signature="e#1070#1096#0" expanded="true" />
+            <element signature="e#1070#1096#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -843,26 +800,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="41" lean-forward="false" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user/led.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="15" lean-forward="true" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/user/delay.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
           <caret line="45" column="22" lean-forward="true" selection-start-line="45" selection-start-column="22" selection-end-line="45" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/delay.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="157" column="28" lean-forward="false" selection-start-line="157" selection-start-column="28" selection-end-line="157" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/CMakeFiles/clion-log.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -875,36 +832,84 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user/mcp41050.h">
+    <entry file="file://$PROJECT_DIR$/user/lcd.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="18" column="27" lean-forward="false" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
+        <state relative-caret-position="96">
+          <caret line="2886" column="62" lean-forward="false" selection-start-line="2886" selection-start-column="62" selection-end-line="2886" selection-end-column="62" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user/mcp41050.c">
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="58" column="50" lean-forward="true" selection-start-line="58" selection-start-column="50" selection-end-line="58" selection-end-column="50" />
-          <folding>
-            <element signature="e#39#66#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="390">
+          <caret line="26" column="41" lean-forward="false" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gdbinit">
+    <entry file="file://$PROJECT_DIR$/toolchain-arm-eabi-gcc.cmake">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
+        <state relative-caret-position="30">
           <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/led.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="44" lean-forward="false" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/cmake_install.cmake">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/CMakeCache.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8517">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/stdlib/Inc/stm32f10x.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="518" column="14" lean-forward="false" selection-start-line="518" selection-start-column="14" selection-end-line="518" selection-end-column="14" />
+        <state relative-caret-position="105">
+          <caret line="43" column="4" lean-forward="true" selection-start-line="43" selection-start-column="4" selection-end-line="43" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/program/gcc-arm-none-eabi-5_4-2016q3/lib/gcc/arm-none-eabi/5.4.1/include/stdint-gcc.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="44" column="12" lean-forward="false" selection-start-line="44" selection-start-column="12" selection-end-line="44" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/mcp41050.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="91" column="5" lean-forward="false" selection-start-line="91" selection-start-column="5" selection-end-line="91" selection-end-column="5" />
+          <folding>
+            <element signature="e#39#66#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/mcp41050.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -912,7 +917,7 @@
     <entry file="file://$PROJECT_DIR$/main.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
-          <caret line="393" column="0" lean-forward="false" selection-start-line="393" selection-start-column="0" selection-end-line="393" selection-end-column="0" />
+          <caret line="399" column="6" lean-forward="false" selection-start-line="399" selection-start-column="6" selection-end-line="399" selection-end-column="6" />
           <folding>
             <element signature="e#1#17#0" expanded="true" />
             <element signature="e#509#2120#0" expanded="false" />
@@ -921,7 +926,6 @@
             <element signature="e#3054#3830#0" expanded="false" />
             <element signature="e#3832#4775#0" expanded="false" />
             <element signature="e#4777#4919#0" expanded="false" />
-            <element signature="e#4921#5149#0" expanded="false" />
             <element signature="e#5151#5543#0" expanded="false" />
             <element signature="e#5545#6396#0" expanded="false" />
             <element signature="e#6397#6577#0" expanded="false" />
@@ -930,10 +934,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user/delay.c">
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="77">
-          <caret line="151" column="0" lean-forward="false" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="21" />
+        <state relative-caret-position="150">
+          <caret line="10" column="37" lean-forward="false" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReadMe">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="26" lean-forward="false" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gdbinit">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="41" lean-forward="false" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build_project.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="42" lean-forward="true" selection-start-line="1" selection-start-column="42" selection-end-line="1" selection-end-column="42" />
           <folding />
         </state>
       </provider>

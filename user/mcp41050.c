@@ -70,9 +70,8 @@ void mcp41050_writeWord(u16 TxData)
     //检查是否发送完毕
     while (SPI_I2S_GetFlagStatus(SPI2, SPI_I2S_FLAG_TXE) == RESET); //检查指定的SPI标志位设置与否:发送缓存空标志位
 
-    delay_us(120);  //使用示波器观察到的间隙
+    delay_us(120);  //使用示波器观察到的间隙 即使数据从16位的缓存寄存器发出去了 数据其实也还没有到MSI数据线上 这样造成CS在数据发送前就关闭了
     CS_OFF; //关闭片选
-
 }
 
 u16 dataCombine(u8 cmd,u8 data)

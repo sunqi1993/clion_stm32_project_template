@@ -46,7 +46,8 @@
 /** @addtogroup stm32f10x
   * @{
   */
-    
+
+
 #ifndef __STM32F10x_H
 #define __STM32F10x_H
 

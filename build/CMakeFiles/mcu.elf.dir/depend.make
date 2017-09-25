@@ -1516,6 +1516,7 @@ CMakeFiles/mcu.elf.dir/user/mcp41050.c.obj: ../system/include/cmsis_gcc.h
 CMakeFiles/mcu.elf.dir/user/mcp41050.c.obj: ../system/include/core_cm3.h
 CMakeFiles/mcu.elf.dir/user/mcp41050.c.obj: ../system/include/core_cmFunc.h
 CMakeFiles/mcu.elf.dir/user/mcp41050.c.obj: ../system/include/core_cmInstr.h
+CMakeFiles/mcu.elf.dir/user/mcp41050.c.obj: ../user/delay.h
 CMakeFiles/mcu.elf.dir/user/mcp41050.c.obj: ../user/mcp41050.c
 CMakeFiles/mcu.elf.dir/user/mcp41050.c.obj: ../user/mcp41050.h
 CMakeFiles/mcu.elf.dir/user/mcp41050.c.obj: ../user/sys.h

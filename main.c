@@ -377,13 +377,16 @@ void test_mcp41050()
 {
     delay_init();
     MCP_SPI_Init();
-    while(1)
-    {
-        mcp41050_set_Res(1);
-        delay_us(2000);
-    }
+    mcp41050_set_Res(28);
+    delay_us(2000);
+    while(1);
 }
 
+//void add_int(int &x,int &y)
+//{
+//    x=2;
+//    y=3;
+//}
 
 int  main(void)
 {
@@ -392,7 +395,10 @@ int  main(void)
     //test_lcd();
     //show_adc_on_lcd();
     test_mcp41050();
+    int a,b;
+//    add_int(a,b);
     return 1;
+
 
 }
 
