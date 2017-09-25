@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/mcu.elf.dir/system/startup/startup_stm32f103xe.s.obj"
-  "CMakeFiles/mcu.elf.dir/main.c.obj"
+  "CMakeFiles/mcu.elf.dir/main.cpp.obj"
   "CMakeFiles/mcu.elf.dir/user/adc.c.obj"
   "CMakeFiles/mcu.elf.dir/user/beep.c.obj"
   "CMakeFiles/mcu.elf.dir/user/delay.c.obj"
@@ -8,7 +8,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/mcu.elf.dir/user/lcd.c.obj"
   "CMakeFiles/mcu.elf.dir/user/led.c.obj"
   "CMakeFiles/mcu.elf.dir/user/mcp41050.c.obj"
-  "CMakeFiles/mcu.elf.dir/user/pid.c.obj"
   "CMakeFiles/mcu.elf.dir/user/spi.c.obj"
   "CMakeFiles/mcu.elf.dir/user/sram.c.obj"
   "CMakeFiles/mcu.elf.dir/user/sys.c.obj"
@@ -43,6 +42,6 @@ file(REMOVE_RECURSE
 )
 
 # Per-language clean rules from dependency scanning.
-foreach(lang ASM C)
+foreach(lang ASM C CXX)
   include(CMakeFiles/mcu.elf.dir/cmake_clean_${lang}.cmake OPTIONAL)
 endforeach()

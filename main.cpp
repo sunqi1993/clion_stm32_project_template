@@ -1,4 +1,8 @@
 
+
+#define en_uartRx_irq 0
+
+extern "C" {
 #include <pid.h>
 #include "sys.h"
 #include "delay.h"
@@ -9,8 +13,9 @@
 #include "wdg.h"
 #include "lcd.h"
 #include "adc.h"
+
+};
 #include "mcp41050.h"
-#define en_uartRx_irq 0
 /************************************************
 ALIENTEK战舰STM32开发板实验2
 蜂鸣器实验
@@ -375,7 +380,7 @@ void show_adc_on_lcd()
 
 void test_mcp41050()
 {
-    delay_init();
+
     MCP_SPI_Init();
     mcp41050_set_Res(28);
     delay_us(2000);

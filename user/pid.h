@@ -28,6 +28,17 @@ typedef struct
     float err_last;         //定义倒数第二次的偏差值
     float kp,ki,kd;         //pid 三个参数
 }add_pos;
+//通过传感器获得当前的状态数据
 
+#ifdef __cplusplus
+extern "C"
+{
+#endif
+
+
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif //MCU_PID_H

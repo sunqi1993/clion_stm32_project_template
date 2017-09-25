@@ -3,6 +3,7 @@
 
 # compile ASM with /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/bin/arm-none-eabi-gcc
 # compile C with /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/bin/arm-none-eabi-gcc
+# compile CXX with /home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/bin/arm-none-eabi-g++
 ASM_FLAGS = -g  
 
 ASM_DEFINES = 
@@ -14,4 +15,10 @@ C_FLAGS =  -mcpu=cortex-m3 -mthumb -fno-common -ffunction-sections -fdata-sectio
 C_DEFINES = 
 
 C_INCLUDES = -I/home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include -I/home/sunqi/CLionProjects/mcu/system/include -I/home/sunqi/CLionProjects/mcu/stdlib/Inc -I/home/sunqi/CLionProjects/mcu/user 
+
+CXX_FLAGS =  -mcpu=cortex-m3 -mthumb -fno-common -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding         -fno-move-loop-invariants -Wall -Og -g3 -std=c++11 -fabi-version=0 -fno-exceptions -fno-rtti -fno-use-cxa-atexit -fno-threadsafe-statics -fpermissive -DARM_MATH_CM3     -DSTM32F10X_HD    -DTRACE     -DOS_USE_TRACE_SEMIHOSTING_STDOUT     -DSTM32F10X_HD     -DUSE_STDPERIPH_DRIVER     -DHSE_VALUE=8000000 -DDEBUG -g  
+
+CXX_DEFINES = 
+
+CXX_INCLUDES = -I/home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include -I/home/sunqi/CLionProjects/mcu/system/include -I/home/sunqi/CLionProjects/mcu/stdlib/Inc -I/home/sunqi/CLionProjects/mcu/user 
 

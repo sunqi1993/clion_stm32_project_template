@@ -4,8 +4,8 @@
 
 #include <stm32f10x_conf.h>
 #include "mcp41050.h"
-#include "stm32f10x_spi.h"
 #include "delay.h"
+
 void MCP_SPI_Init()
 {
     once_delayinit();

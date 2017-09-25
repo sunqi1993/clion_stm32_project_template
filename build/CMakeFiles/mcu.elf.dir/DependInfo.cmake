@@ -2,6 +2,7 @@
 set(CMAKE_DEPENDS_LANGUAGES
   "ASM"
   "C"
+  "CXX"
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_ASM
@@ -17,7 +18,6 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "../user"
   )
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/sunqi/CLionProjects/mcu/main.c" "/home/sunqi/CLionProjects/mcu/build/CMakeFiles/mcu.elf.dir/main.c.obj"
   "/home/sunqi/CLionProjects/mcu/stdlib/Src/misc.c" "/home/sunqi/CLionProjects/mcu/build/CMakeFiles/mcu.elf.dir/stdlib/Src/misc.c.obj"
   "/home/sunqi/CLionProjects/mcu/stdlib/Src/stm32f10x_adc.c" "/home/sunqi/CLionProjects/mcu/build/CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_adc.c.obj"
   "/home/sunqi/CLionProjects/mcu/stdlib/Src/stm32f10x_bkp.c" "/home/sunqi/CLionProjects/mcu/build/CMakeFiles/mcu.elf.dir/stdlib/Src/stm32f10x_bkp.c.obj"
@@ -49,7 +49,6 @@ set(CMAKE_DEPENDS_CHECK_C
   "/home/sunqi/CLionProjects/mcu/user/lcd.c" "/home/sunqi/CLionProjects/mcu/build/CMakeFiles/mcu.elf.dir/user/lcd.c.obj"
   "/home/sunqi/CLionProjects/mcu/user/led.c" "/home/sunqi/CLionProjects/mcu/build/CMakeFiles/mcu.elf.dir/user/led.c.obj"
   "/home/sunqi/CLionProjects/mcu/user/mcp41050.c" "/home/sunqi/CLionProjects/mcu/build/CMakeFiles/mcu.elf.dir/user/mcp41050.c.obj"
-  "/home/sunqi/CLionProjects/mcu/user/pid.c" "/home/sunqi/CLionProjects/mcu/build/CMakeFiles/mcu.elf.dir/user/pid.c.obj"
   "/home/sunqi/CLionProjects/mcu/user/spi.c" "/home/sunqi/CLionProjects/mcu/build/CMakeFiles/mcu.elf.dir/user/spi.c.obj"
   "/home/sunqi/CLionProjects/mcu/user/sram.c" "/home/sunqi/CLionProjects/mcu/build/CMakeFiles/mcu.elf.dir/user/sram.c.obj"
   "/home/sunqi/CLionProjects/mcu/user/sys.c" "/home/sunqi/CLionProjects/mcu/build/CMakeFiles/mcu.elf.dir/user/sys.c.obj"
@@ -60,6 +59,18 @@ set(CMAKE_C_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
+  "/home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include"
+  "../system/include"
+  "../stdlib/Inc"
+  "../user"
+  )
+set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/sunqi/CLionProjects/mcu/main.cpp" "/home/sunqi/CLionProjects/mcu/build/CMakeFiles/mcu.elf.dir/main.cpp.obj"
+  )
+set(CMAKE_CXX_COMPILER_ID "GNU")
+
+# The include file search paths:
+set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include"
   "../system/include"
   "../stdlib/Inc"

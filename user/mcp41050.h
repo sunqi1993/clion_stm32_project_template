@@ -31,10 +31,21 @@
 #define WriteData_CMD (0x13)
 #define NOP_CMD (0x00)
 
-void MCP_SPI_Init();
-void mcp41050_spi_setSpeed(u8 SPI_BaudRatePrescaler);
-void mcp41050_writeWord(u16 TxData);
-u16 dataCombine(u8 cmd,u8 data);
-void mcp41050_set_Res(u8 data);   //这个向MCP41050写入0-255的相对的分度值的函数 写入的时候直接调用就好
+#ifdef __cplusplus
+extern "C"
+{
+#endif
 
+void MCP_SPI_Init();
+
+void mcp41050_spi_setSpeed(u8 SPI_BaudRatePrescaler);
+
+void mcp41050_writeWord(u16 TxData);
+
+u16 dataCombine(u8 cmd, u8 data);
+
+void mcp41050_set_Res(u8 data);   //这个向MCP41050写入0-255的相对的分度值的函数 写入的时候直接调用就好
+#ifdef __cplusplus
+}
+#endif
 #endif //MCU_MCP41050

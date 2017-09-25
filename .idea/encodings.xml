@@ -3,7 +3,6 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/stdlib/Inc/stm32f10x.h" charset="ISO-8859-1" />
     <file url="file://$PROJECT_DIR$/user/adc.c" charset="GB18030" />
-    <file url="file://$PROJECT_DIR$/user/adc.c" charset="GB18030" />
     <file url="file://$PROJECT_DIR$/user/adc.h" charset="GB18030" />
     <file url="file://$PROJECT_DIR$/user/beep.c" charset="GB18030" />
     <file url="file://$PROJECT_DIR$/user/delay.c" charset="GB18030" />
@@ -19,5 +18,6 @@
     <file url="file://$PROJECT_DIR$/user/sys.h" charset="GB18030" />
     <file url="file://$PROJECT_DIR$/user/usart.c" charset="GB18030" />
     <file url="file://$PROJECT_DIR$/user/wdg.c" charset="GB18030" />
+    <file url="file://$PROJECT_DIR$/user/wdg.h" charset="GB18030" />
   </component>
 </project>

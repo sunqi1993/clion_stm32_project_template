@@ -123,32 +123,32 @@ mcu.elf/fast:
 	$(MAKE) -f CMakeFiles/mcu.elf.dir/build.make CMakeFiles/mcu.elf.dir/build
 .PHONY : mcu.elf/fast
 
-main.obj: main.c.obj
+main.obj: main.cpp.obj
 
 .PHONY : main.obj
 
 # target to build an object file
-main.c.obj:
-	$(MAKE) -f CMakeFiles/mcu.elf.dir/build.make CMakeFiles/mcu.elf.dir/main.c.obj
-.PHONY : main.c.obj
+main.cpp.obj:
+	$(MAKE) -f CMakeFiles/mcu.elf.dir/build.make CMakeFiles/mcu.elf.dir/main.cpp.obj
+.PHONY : main.cpp.obj
 
-main.i: main.c.i
+main.i: main.cpp.i
 
 .PHONY : main.i
 
 # target to preprocess a source file
-main.c.i:
-	$(MAKE) -f CMakeFiles/mcu.elf.dir/build.make CMakeFiles/mcu.elf.dir/main.c.i
-.PHONY : main.c.i
+main.cpp.i:
+	$(MAKE) -f CMakeFiles/mcu.elf.dir/build.make CMakeFiles/mcu.elf.dir/main.cpp.i
+.PHONY : main.cpp.i
 
-main.s: main.c.s
+main.s: main.cpp.s
 
 .PHONY : main.s
 
 # target to generate assembly for a file
-main.c.s:
-	$(MAKE) -f CMakeFiles/mcu.elf.dir/build.make CMakeFiles/mcu.elf.dir/main.c.s
-.PHONY : main.c.s
+main.cpp.s:
+	$(MAKE) -f CMakeFiles/mcu.elf.dir/build.make CMakeFiles/mcu.elf.dir/main.cpp.s
+.PHONY : main.cpp.s
 
 stdlib/Src/misc.obj: stdlib/Src/misc.c.obj
 
@@ -996,33 +996,6 @@ user/mcp41050.c.s:
 	$(MAKE) -f CMakeFiles/mcu.elf.dir/build.make CMakeFiles/mcu.elf.dir/user/mcp41050.c.s
 .PHONY : user/mcp41050.c.s
 
-user/pid.obj: user/pid.c.obj
-
-.PHONY : user/pid.obj
-
-# target to build an object file
-user/pid.c.obj:
-	$(MAKE) -f CMakeFiles/mcu.elf.dir/build.make CMakeFiles/mcu.elf.dir/user/pid.c.obj
-.PHONY : user/pid.c.obj
-
-user/pid.i: user/pid.c.i
-
-.PHONY : user/pid.i
-
-# target to preprocess a source file
-user/pid.c.i:
-	$(MAKE) -f CMakeFiles/mcu.elf.dir/build.make CMakeFiles/mcu.elf.dir/user/pid.c.i
-.PHONY : user/pid.c.i
-
-user/pid.s: user/pid.c.s
-
-.PHONY : user/pid.s
-
-# target to generate assembly for a file
-user/pid.c.s:
-	$(MAKE) -f CMakeFiles/mcu.elf.dir/build.make CMakeFiles/mcu.elf.dir/user/pid.c.s
-.PHONY : user/pid.c.s
-
 user/spi.obj: user/spi.c.obj
 
 .PHONY : user/spi.obj
@@ -1264,9 +1237,6 @@ help:
 	@echo "... user/mcp41050.obj"
 	@echo "... user/mcp41050.i"
 	@echo "... user/mcp41050.s"
-	@echo "... user/pid.obj"
-	@echo "... user/pid.i"
-	@echo "... user/pid.s"
 	@echo "... user/spi.obj"
 	@echo "... user/spi.i"
 	@echo "... user/spi.s"
