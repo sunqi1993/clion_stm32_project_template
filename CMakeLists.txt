@@ -44,7 +44,7 @@ include_directories(
 file(GLOB_RECURSE SOURCE_FILES
         #指定启动文件
         system/startup/startup_stm32f103xe.s
-        main.cpp
+        main.c
         user/*.c
         stdlib/Src/*.c
         )

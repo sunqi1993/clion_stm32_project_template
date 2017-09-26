@@ -57,7 +57,6 @@ void mcp41050_spi_setSpeed(u8 SPI_BaudRatePrescaler)
     assert_param(IS_SPI_BAUDRATE_PRESCALER(SPI_BaudRatePrescaler));
     SPI2->CR1&=0XFFC7;   //清除寄存器上的波特率选择的三个位
     SPI2->CR1|=SPI_BaudRatePrescaler;	//设置SPI2速度
-
 }
 
 

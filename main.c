@@ -2,7 +2,6 @@
 
 #define en_uartRx_irq 0
 
-extern "C" {
 #include <pid.h>
 #include "sys.h"
 #include "delay.h"
@@ -13,8 +12,8 @@ extern "C" {
 #include "wdg.h"
 #include "lcd.h"
 #include "adc.h"
+#include "pid.h"
 
-};
 #include "mcp41050.h"
 /************************************************
 ALIENTEK战舰STM32开发板实验2
@@ -241,6 +240,7 @@ void test_watchDog()
 /*定时器测试函数*/
 void timer3_init(u32 arr, u32 psc)
 {
+
     TIM_TimeBaseInitTypeDef TIM_TimeBaseStructure;
     NVIC_InitTypeDef NVIC_InitStructure;
     RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM3, ENABLE);
@@ -252,6 +252,7 @@ void timer3_init(u32 arr, u32 psc)
 
     TIM_TimeBaseInit(TIM3, &TIM_TimeBaseStructure);
     TIM_ITConfig(TIM3, TIM_IT_Update, ENABLE);   //允许更新中断
+
     //NVIC中断优先级设置
     NVIC_InitStructure.NVIC_IRQChannel = TIM3_IRQn;
     NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 0;
@@ -263,15 +264,15 @@ void timer3_init(u32 arr, u32 psc)
 
 }
 //定时器3的中断函数
-void TIM3_IRQHandler()
-{
-    if (TIM_GetITStatus(TIM3, TIM_IT_Update) != RESET)
-    {
-        TIM_ClearITPendingBit(TIM3, TIM_IT_Update);
-        LED1 = !LED1;
-
-    }
-}
+//void TIM3_IRQHandler()
+//{
+//    if (TIM_GetITStatus(TIM3, TIM_IT_Update) != RESET)
+//    {
+//        TIM_ClearITPendingBit(TIM3, TIM_IT_Update);
+//        LED1 = !LED1;
+//
+//    }
+//}
 
 void test_timer3()
 {
@@ -395,12 +396,14 @@ void test_mcp41050()
 
 int  main(void)
 {
+
 //    test_timer3();
 
     //test_lcd();
     //show_adc_on_lcd();
-    test_mcp41050();
+//    test_mcp41050();
     int a,b;
+    pos_pid_init(1,1,1,10,10);
 //    add_int(a,b);
     return 1;
 
