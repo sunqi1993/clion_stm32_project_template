@@ -1,2 +1,4 @@
 如果想使用C++ 写项目的话注意main文件必须要使用  *.cpp
 如果想使用c   写项目的话main文件就必须要使用    *.c文件
+
+-DTOOLCHAIN_DIR=/home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/ -DCMAKE_TOOLCHAIN_FILE=/home/sunqi/Desktop/project/clion_stm32_project_template/toolchain-arm-eabi-gcc.cmake

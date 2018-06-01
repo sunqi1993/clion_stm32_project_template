@@ -332,7 +332,6 @@ void test_lcd(void)
         if(x==12)x=0;
         LED0=!LED0;
         delay_ms(1000);
-
     }
 }
 
@@ -382,17 +381,11 @@ void test_mcp41050()
     while(1);
 }
 
-//void add_int(int &x,int &y)
-//{
-//    x=2;
-//    y=3;
-//}
-
 int  main(void)
 {
 //    test_timer3();
 
-    //test_lcd();
+    test_lcd();
     //show_adc_on_lcd();
     test_mcp41050();
     int a,b;

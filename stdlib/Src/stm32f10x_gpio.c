@@ -22,7 +22,7 @@
 /* Includes ------------------------------------------------------------------*/
 #include "stm32f10x_gpio.h"
 #include "stm32f10x_rcc.h"
-#include "../../../../.platformio/packages/toolchain-gccarmnoneeabi/lib/gcc/arm-none-eabi/4.8.4/include/stdint.h"
+#include "stdint.h"
 
 /** @addtogroup STM32F10x_StdPeriph_Driver
   * @{

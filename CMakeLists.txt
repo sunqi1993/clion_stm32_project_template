@@ -1,7 +1,45 @@
 cmake_minimum_required(VERSION 3.7)
 
-
 project(mcu)
+
+include(CMakeForceCompiler)
+set(CMAKE_SYSTEM_NAME Generic)
+set(CMAKE_SYSTEM_PROCESSOR cortex-m3)  #设置target处理器类型
+
+find_program(ARM_CC arm-none-eabi-gcc ${TOOLCHAIN_DIR}/bin)
+find_program(ARM_CXX arm-none-eabi-g++ ${TOOLCHAIN_DIR}/bin)
+find_program(ARM_OBJCOPY arm-none-eabi-objcopy ${TOOLCHAIN_DIR}/bin)
+find_program(ARM_SIZE_TOOL arm-none-eabi-size ${TOOLCHAIN_DIR}/bin)
+
+CMAKE_FORCE_C_COMPILER(${ARM_CC} GNU)
+CMAKE_FORCE_CXX_COMPILER(${ARM_CXX} GNU)
+
+set(CMAKE_ARM_FLAGS
+        "-mcpu=cortex-m3 -mthumb -fno-common -ffunction-sections -fdata-sections"
+        )
+
+if (CMAKE_SYSTEM_PROCESSOR STREQUAL "cortex-m3")
+    set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ${CMAKE_ARM_FLAGS}")
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${CMAKE_ARM_FLAGS}")
+    set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} ${CMAKE_ARM_FLAGS}")
+else ()
+    message(WARNING
+            "Processor not recognised in toolchain file, "
+            "compiler flags not configured."
+            )
+endif ()
+
+# fix long strings (CMake appends semicolons)
+string(REGEX REPLACE ";" " " CMAKE_C_FLAGS "${CMAKE_C_FLAGS}")
+
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS}" CACHE STRING "")
+
+set(BUILD_SHARED_LIBS OFF)
+
+
+
+
+
 
 enable_language(ASM)
 
@@ -15,12 +53,12 @@ set(USER_CXX_FLAGS  "-std=c++11 -fabi-version=0 -fno-exceptions -fno-rtti -fno-u
 #-DUSE_FULL_ASSERT \
 set(USER_C_DEFINES
         "-DARM_MATH_CM3 \
-    -DSTM32F10X_HD\
-    -DTRACE \
-    -DOS_USE_TRACE_SEMIHOSTING_STDOUT \
-    -DSTM32F10X_HD \
-    -DUSE_STDPERIPH_DRIVER \
-    -DHSE_VALUE=8000000"
+        -DSTM32F10X_HD\
+        -DTRACE \
+        -DOS_USE_TRACE_SEMIHOSTING_STDOUT \
+        -DSTM32F10X_HD \
+        -DUSE_STDPERIPH_DRIVER \
+        -DHSE_VALUE=8000000"
         )
 
 if(BUILD_MODE STREQUAL "DEBUG")
@@ -58,9 +96,11 @@ set(CMAKE_EXE_LINKER_FLAGS
 
 add_executable(${PROJECT_NAME}.elf ${SOURCE_FILES})
 
+
+
 set(HEX_FILE ${CMAKE_BINARY_DIR}/${PROJECT_NAME}.hex)
 set(BIN_FILE ${CMAKE_BINARY_DIR}/${PROJECT_NAME}.bin)
 add_custom_command(TARGET ${PROJECT_NAME}.elf POST_BUILD
-        COMMAND ${CMAKE_OBJCOPY} -Oihex $<TARGET_FILE:${PROJECT_NAME}.elf> ${HEX_FILE}
-        COMMAND ${CMAKE_OBJCOPY} -Obinary $<TARGET_FILE:${PROJECT_NAME}.elf> ${BIN_FILE}
+        COMMAND ${ARM_OBJCOPY} -Oihex $<TARGET_FILE:${PROJECT_NAME}.elf> ${HEX_FILE}
+        COMMAND ${ARM_OBJCOPY} -Obinary $<TARGET_FILE:${PROJECT_NAME}.elf> ${BIN_FILE}
         )
