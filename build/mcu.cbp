@@ -5,250 +5,251 @@
 		<Option title="mcu"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\Desktop\;CMake Files\..\..\Desktop\mcu_proj\;CMake Files\..\..\Desktop\mcu_proj\conf\;"/>
+		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/sunqi/CLionProjects/mcu/build"/>
+				<Option working_dir="/home/sunqi/Desktop/project/clion_stm32_project_template/build"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/sunqi/CLionProjects/mcu/build/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/sunqi/CLionProjects/mcu/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/sunqi/CLionProjects/mcu/build/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/sunqi/CLionProjects/mcu/build/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="rebuild_cache">
-				<Option working_dir="/home/sunqi/CLionProjects/mcu/build"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/sunqi/CLionProjects/mcu/build/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/sunqi/CLionProjects/mcu/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/sunqi/CLionProjects/mcu/build/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/sunqi/CLionProjects/mcu/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/sunqi/Desktop/project/clion_stm32_project_template/build/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/sunqi/Desktop/project/clion_stm32_project_template/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/sunqi/Desktop/project/clion_stm32_project_template/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/sunqi/Desktop/project/clion_stm32_project_template/build/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/sunqi/CLionProjects/mcu/build"/>
+				<Option working_dir="/home/sunqi/Desktop/project/clion_stm32_project_template/build"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/sunqi/CLionProjects/mcu/build/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/sunqi/CLionProjects/mcu/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/sunqi/CLionProjects/mcu/build/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/sunqi/CLionProjects/mcu/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/sunqi/Desktop/project/clion_stm32_project_template/build/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/sunqi/Desktop/project/clion_stm32_project_template/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/sunqi/Desktop/project/clion_stm32_project_template/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/sunqi/Desktop/project/clion_stm32_project_template/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/sunqi/Desktop/project/clion_stm32_project_template/build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/sunqi/Desktop/project/clion_stm32_project_template/build/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/sunqi/Desktop/project/clion_stm32_project_template/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/sunqi/Desktop/project/clion_stm32_project_template/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/sunqi/Desktop/project/clion_stm32_project_template/build/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="mcu.elf">
-				<Option output="/home/sunqi/CLionProjects/mcu/build/mcu.elf" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/sunqi/CLionProjects/mcu/build"/>
+				<Option output="/home/sunqi/Desktop/project/clion_stm32_project_template/build/mcu.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/sunqi/Desktop/project/clion_stm32_project_template/build"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include"/>
-					<Add directory="/home/sunqi/CLionProjects/mcu/system/include"/>
-					<Add directory="/home/sunqi/CLionProjects/mcu/stdlib/Inc"/>
-					<Add directory="/home/sunqi/CLionProjects/mcu/user"/>
-					<Add directory="/home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/include/c++/5.4.1"/>
-					<Add directory="/home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/include/c++/5.4.1/arm-none-eabi"/>
-					<Add directory="/home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/include/c++/5.4.1/backward"/>
-					<Add directory="/home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/include"/>
-					<Add directory="/home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/include-fixed"/>
-					<Add directory="/home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/include"/>
+					<Add directory="/home/sunqi/Desktop/project/clion_stm32_project_template/system/include"/>
+					<Add directory="/home/sunqi/Desktop/project/clion_stm32_project_template/stdlib/Inc"/>
+					<Add directory="/home/sunqi/Desktop/project/clion_stm32_project_template/user"/>
+					<Add directory="/usr/include/c++/6"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/6"/>
+					<Add directory="/usr/include/c++/6/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/sunqi/CLionProjects/mcu/build/Makefile&quot;  VERBOSE=1 mcu.elf"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/sunqi/CLionProjects/mcu/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/sunqi/CLionProjects/mcu/build/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/sunqi/CLionProjects/mcu/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/sunqi/Desktop/project/clion_stm32_project_template/build/Makefile&quot;  VERBOSE=1 mcu.elf"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/sunqi/Desktop/project/clion_stm32_project_template/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/sunqi/Desktop/project/clion_stm32_project_template/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/sunqi/Desktop/project/clion_stm32_project_template/build/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="mcu.elf/fast">
-				<Option output="/home/sunqi/CLionProjects/mcu/build/mcu.elf" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/sunqi/CLionProjects/mcu/build"/>
+				<Option output="/home/sunqi/Desktop/project/clion_stm32_project_template/build/mcu.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/sunqi/Desktop/project/clion_stm32_project_template/build"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/include"/>
-					<Add directory="/home/sunqi/CLionProjects/mcu/system/include"/>
-					<Add directory="/home/sunqi/CLionProjects/mcu/stdlib/Inc"/>
-					<Add directory="/home/sunqi/CLionProjects/mcu/user"/>
-					<Add directory="/home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/include/c++/5.4.1"/>
-					<Add directory="/home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/include/c++/5.4.1/arm-none-eabi"/>
-					<Add directory="/home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/include/c++/5.4.1/backward"/>
-					<Add directory="/home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/include"/>
-					<Add directory="/home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/include-fixed"/>
-					<Add directory="/home/sunqi/program/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/include"/>
+					<Add directory="/home/sunqi/Desktop/project/clion_stm32_project_template/system/include"/>
+					<Add directory="/home/sunqi/Desktop/project/clion_stm32_project_template/stdlib/Inc"/>
+					<Add directory="/home/sunqi/Desktop/project/clion_stm32_project_template/user"/>
+					<Add directory="/usr/include/c++/6"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/6"/>
+					<Add directory="/usr/include/c++/6/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/sunqi/CLionProjects/mcu/build/Makefile&quot;  VERBOSE=1 mcu.elf/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/sunqi/CLionProjects/mcu/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/sunqi/CLionProjects/mcu/build/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/sunqi/CLionProjects/mcu/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/sunqi/Desktop/project/clion_stm32_project_template/build/Makefile&quot;  VERBOSE=1 mcu.elf/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/sunqi/Desktop/project/clion_stm32_project_template/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/sunqi/Desktop/project/clion_stm32_project_template/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/sunqi/Desktop/project/clion_stm32_project_template/build/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/sunqi/CLionProjects/mcu/main.c">
+		<Unit filename="/home/sunqi/Desktop/project/clion_stm32_project_template/main.c">
 			<Option target="mcu.elf"/>
 		</Unit>
-		<Unit filename="/home/sunqi/CLionProjects/mcu/stdlib/Src/misc.c">
+		<Unit filename="/home/sunqi/Desktop/project/clion_stm32_project_template/stdlib/Src/misc.c">
 			<Option target="mcu.elf"/>
 		</Unit>
-		<Unit filename="/home/sunqi/CLionProjects/mcu/stdlib/Src/stm32f10x_adc.c">
+		<Unit filename="/home/sunqi/Desktop/project/clion_stm32_project_template/stdlib/Src/stm32f10x_adc.c">
 			<Option target="mcu.elf"/>
 		</Unit>
-		<Unit filename="/home/sunqi/CLionProjects/mcu/stdlib/Src/stm32f10x_bkp.c">
+		<Unit filename="/home/sunqi/Desktop/project/clion_stm32_project_template/stdlib/Src/stm32f10x_bkp.c">
 			<Option target="mcu.elf"/>
 		</Unit>
-		<Unit filename="/home/sunqi/CLionProjects/mcu/stdlib/Src/stm32f10x_can.c">
+		<Unit filename="/home/sunqi/Desktop/project/clion_stm32_project_template/stdlib/Src/stm32f10x_can.c">
 			<Option target="mcu.elf"/>
 		</Unit>
-		<Unit filename="/home/sunqi/CLionProjects/mcu/stdlib/Src/stm32f10x_cec.c">
+		<Unit filename="/home/sunqi/Desktop/project/clion_stm32_project_template/stdlib/Src/stm32f10x_cec.c">
 			<Option target="mcu.elf"/>
 		</Unit>
-		<Unit filename="/home/sunqi/CLionProjects/mcu/stdlib/Src/stm32f10x_crc.c">
+		<Unit filename="/home/sunqi/Desktop/project/clion_stm32_project_template/stdlib/Src/stm32f10x_crc.c">
 			<Option target="mcu.elf"/>
 		</Unit>
-		<Unit filename="/home/sunqi/CLionProjects/mcu/stdlib/Src/stm32f10x_dac.c">
+		<Unit filename="/home/sunqi/Desktop/project/clion_stm32_project_template/stdlib/Src/stm32f10x_dac.c">
 			<Option target="mcu.elf"/>
 		</Unit>
-		<Unit filename="/home/sunqi/CLionProjects/mcu/stdlib/Src/stm32f10x_dbgmcu.c">
+		<Unit filename="/home/sunqi/Desktop/project/clion_stm32_project_template/stdlib/Src/stm32f10x_dbgmcu.c">
 			<Option target="mcu.elf"/>
 		</Unit>
-		<Unit filename="/home/sunqi/CLionProjects/mcu/stdlib/Src/stm32f10x_dma.c">
+		<Unit filename="/home/sunqi/Desktop/project/clion_stm32_project_template/stdlib/Src/stm32f10x_dma.c">
 			<Option target="mcu.elf"/>
 		</Unit>
-		<Unit filename="/home/sunqi/CLionProjects/mcu/stdlib/Src/stm32f10x_exti.c">
+		<Unit filename="/home/sunqi/Desktop/project/clion_stm32_project_template/stdlib/Src/stm32f10x_exti.c">
 			<Option target="mcu.elf"/>
 		</Unit>
-		<Unit filename="/home/sunqi/CLionProjects/mcu/stdlib/Src/stm32f10x_flash.c">
+		<Unit filename="/home/sunqi/Desktop/project/clion_stm32_project_template/stdlib/Src/stm32f10x_flash.c">
 			<Option target="mcu.elf"/>
 		</Unit>
-		<Unit filename="/home/sunqi/CLionProjects/mcu/stdlib/Src/stm32f10x_fsmc.c">
+		<Unit filename="/home/sunqi/Desktop/project/clion_stm32_project_template/stdlib/Src/stm32f10x_fsmc.c">
 			<Option target="mcu.elf"/>
 		</Unit>
-		<Unit filename="/home/sunqi/CLionProjects/mcu/stdlib/Src/stm32f10x_gpio.c">
+		<Unit filename="/home/sunqi/Desktop/project/clion_stm32_project_template/stdlib/Src/stm32f10x_gpio.c">
 			<Option target="mcu.elf"/>
 		</Unit>
-		<Unit filename="/home/sunqi/CLionProjects/mcu/stdlib/Src/stm32f10x_i2c.c">
+		<Unit filename="/home/sunqi/Desktop/project/clion_stm32_project_template/stdlib/Src/stm32f10x_i2c.c">
 			<Option target="mcu.elf"/>
 		</Unit>
-		<Unit filename="/home/sunqi/CLionProjects/mcu/stdlib/Src/stm32f10x_iwdg.c">
+		<Unit filename="/home/sunqi/Desktop/project/clion_stm32_project_template/stdlib/Src/stm32f10x_iwdg.c">
 			<Option target="mcu.elf"/>
 		</Unit>
-		<Unit filename="/home/sunqi/CLionProjects/mcu/stdlib/Src/stm32f10x_pwr.c">
+		<Unit filename="/home/sunqi/Desktop/project/clion_stm32_project_template/stdlib/Src/stm32f10x_pwr.c">
 			<Option target="mcu.elf"/>
 		</Unit>
-		<Unit filename="/home/sunqi/CLionProjects/mcu/stdlib/Src/stm32f10x_rcc.c">
+		<Unit filename="/home/sunqi/Desktop/project/clion_stm32_project_template/stdlib/Src/stm32f10x_rcc.c">
 			<Option target="mcu.elf"/>
 		</Unit>
-		<Unit filename="/home/sunqi/CLionProjects/mcu/stdlib/Src/stm32f10x_rtc.c">
+		<Unit filename="/home/sunqi/Desktop/project/clion_stm32_project_template/stdlib/Src/stm32f10x_rtc.c">
 			<Option target="mcu.elf"/>
 		</Unit>
-		<Unit filename="/home/sunqi/CLionProjects/mcu/stdlib/Src/stm32f10x_sdio.c">
+		<Unit filename="/home/sunqi/Desktop/project/clion_stm32_project_template/stdlib/Src/stm32f10x_sdio.c">
 			<Option target="mcu.elf"/>
 		</Unit>
-		<Unit filename="/home/sunqi/CLionProjects/mcu/stdlib/Src/stm32f10x_spi.c">
+		<Unit filename="/home/sunqi/Desktop/project/clion_stm32_project_template/stdlib/Src/stm32f10x_spi.c">
 			<Option target="mcu.elf"/>
 		</Unit>
-		<Unit filename="/home/sunqi/CLionProjects/mcu/stdlib/Src/stm32f10x_tim.c">
+		<Unit filename="/home/sunqi/Desktop/project/clion_stm32_project_template/stdlib/Src/stm32f10x_tim.c">
 			<Option target="mcu.elf"/>
 		</Unit>
-		<Unit filename="/home/sunqi/CLionProjects/mcu/stdlib/Src/stm32f10x_usart.c">
+		<Unit filename="/home/sunqi/Desktop/project/clion_stm32_project_template/stdlib/Src/stm32f10x_usart.c">
 			<Option target="mcu.elf"/>
 		</Unit>
-		<Unit filename="/home/sunqi/CLionProjects/mcu/stdlib/Src/stm32f10x_wwdg.c">
+		<Unit filename="/home/sunqi/Desktop/project/clion_stm32_project_template/stdlib/Src/stm32f10x_wwdg.c">
 			<Option target="mcu.elf"/>
 		</Unit>
-		<Unit filename="/home/sunqi/CLionProjects/mcu/stdlib/Src/system_stm32f10x.c">
+		<Unit filename="/home/sunqi/Desktop/project/clion_stm32_project_template/stdlib/Src/system_stm32f10x.c">
 			<Option target="mcu.elf"/>
 		</Unit>
-		<Unit filename="/home/sunqi/CLionProjects/mcu/system/startup/startup_stm32f103xe.s">
+		<Unit filename="/home/sunqi/Desktop/project/clion_stm32_project_template/system/startup/startup_stm32f103xe.s">
 			<Option target="mcu.elf"/>
 		</Unit>
-		<Unit filename="/home/sunqi/CLionProjects/mcu/user/adc.c">
+		<Unit filename="/home/sunqi/Desktop/project/clion_stm32_project_template/user/adc.c">
 			<Option target="mcu.elf"/>
 		</Unit>
-		<Unit filename="/home/sunqi/CLionProjects/mcu/user/adc.h">
+		<Unit filename="/home/sunqi/Desktop/project/clion_stm32_project_template/user/adc.h">
 			<Option target="mcu.elf"/>
 		</Unit>
-		<Unit filename="/home/sunqi/CLionProjects/mcu/user/beep.c">
+		<Unit filename="/home/sunqi/Desktop/project/clion_stm32_project_template/user/beep.c">
 			<Option target="mcu.elf"/>
 		</Unit>
-		<Unit filename="/home/sunqi/CLionProjects/mcu/user/beep.h">
+		<Unit filename="/home/sunqi/Desktop/project/clion_stm32_project_template/user/beep.h">
 			<Option target="mcu.elf"/>
 		</Unit>
-		<Unit filename="/home/sunqi/CLionProjects/mcu/user/delay.c">
+		<Unit filename="/home/sunqi/Desktop/project/clion_stm32_project_template/user/delay.c">
 			<Option target="mcu.elf"/>
 		</Unit>
-		<Unit filename="/home/sunqi/CLionProjects/mcu/user/delay.h">
+		<Unit filename="/home/sunqi/Desktop/project/clion_stm32_project_template/user/delay.h">
 			<Option target="mcu.elf"/>
 		</Unit>
-		<Unit filename="/home/sunqi/CLionProjects/mcu/user/key.c">
+		<Unit filename="/home/sunqi/Desktop/project/clion_stm32_project_template/user/key.c">
 			<Option target="mcu.elf"/>
 		</Unit>
-		<Unit filename="/home/sunqi/CLionProjects/mcu/user/key.h">
+		<Unit filename="/home/sunqi/Desktop/project/clion_stm32_project_template/user/key.h">
 			<Option target="mcu.elf"/>
 		</Unit>
-		<Unit filename="/home/sunqi/CLionProjects/mcu/user/lcd.c">
+		<Unit filename="/home/sunqi/Desktop/project/clion_stm32_project_template/user/lcd.c">
 			<Option target="mcu.elf"/>
 		</Unit>
-		<Unit filename="/home/sunqi/CLionProjects/mcu/user/lcd.h">
+		<Unit filename="/home/sunqi/Desktop/project/clion_stm32_project_template/user/lcd.h">
 			<Option target="mcu.elf"/>
 		</Unit>
-		<Unit filename="/home/sunqi/CLionProjects/mcu/user/led.c">
+		<Unit filename="/home/sunqi/Desktop/project/clion_stm32_project_template/user/led.c">
 			<Option target="mcu.elf"/>
 		</Unit>
-		<Unit filename="/home/sunqi/CLionProjects/mcu/user/led.h">
+		<Unit filename="/home/sunqi/Desktop/project/clion_stm32_project_template/user/led.h">
 			<Option target="mcu.elf"/>
 		</Unit>
-		<Unit filename="/home/sunqi/CLionProjects/mcu/user/mcp41050.c">
+		<Unit filename="/home/sunqi/Desktop/project/clion_stm32_project_template/user/mcp41050.c">
 			<Option target="mcu.elf"/>
 		</Unit>
-		<Unit filename="/home/sunqi/CLionProjects/mcu/user/mcp41050.h">
+		<Unit filename="/home/sunqi/Desktop/project/clion_stm32_project_template/user/mcp41050.h">
 			<Option target="mcu.elf"/>
 		</Unit>
-		<Unit filename="/home/sunqi/CLionProjects/mcu/user/pid.c">
+		<Unit filename="/home/sunqi/Desktop/project/clion_stm32_project_template/user/pid.c">
 			<Option target="mcu.elf"/>
 		</Unit>
-		<Unit filename="/home/sunqi/CLionProjects/mcu/user/pid.h">
+		<Unit filename="/home/sunqi/Desktop/project/clion_stm32_project_template/user/pid.h">
 			<Option target="mcu.elf"/>
 		</Unit>
-		<Unit filename="/home/sunqi/CLionProjects/mcu/user/spi.c">
+		<Unit filename="/home/sunqi/Desktop/project/clion_stm32_project_template/user/spi.c">
 			<Option target="mcu.elf"/>
 		</Unit>
-		<Unit filename="/home/sunqi/CLionProjects/mcu/user/spi.h">
+		<Unit filename="/home/sunqi/Desktop/project/clion_stm32_project_template/user/spi.h">
 			<Option target="mcu.elf"/>
 		</Unit>
-		<Unit filename="/home/sunqi/CLionProjects/mcu/user/sram.c">
+		<Unit filename="/home/sunqi/Desktop/project/clion_stm32_project_template/user/sram.c">
 			<Option target="mcu.elf"/>
 		</Unit>
-		<Unit filename="/home/sunqi/CLionProjects/mcu/user/sram.h">
+		<Unit filename="/home/sunqi/Desktop/project/clion_stm32_project_template/user/sram.h">
 			<Option target="mcu.elf"/>
 		</Unit>
-		<Unit filename="/home/sunqi/CLionProjects/mcu/user/sys.c">
+		<Unit filename="/home/sunqi/Desktop/project/clion_stm32_project_template/user/sys.c">
 			<Option target="mcu.elf"/>
 		</Unit>
-		<Unit filename="/home/sunqi/CLionProjects/mcu/user/sys.h">
+		<Unit filename="/home/sunqi/Desktop/project/clion_stm32_project_template/user/sys.h">
 			<Option target="mcu.elf"/>
 		</Unit>
-		<Unit filename="/home/sunqi/CLionProjects/mcu/user/usart.c">
+		<Unit filename="/home/sunqi/Desktop/project/clion_stm32_project_template/user/usart.c">
 			<Option target="mcu.elf"/>
 		</Unit>
-		<Unit filename="/home/sunqi/CLionProjects/mcu/user/usart.h">
+		<Unit filename="/home/sunqi/Desktop/project/clion_stm32_project_template/user/usart.h">
 			<Option target="mcu.elf"/>
 		</Unit>
-		<Unit filename="/home/sunqi/CLionProjects/mcu/user/wdg.c">
+		<Unit filename="/home/sunqi/Desktop/project/clion_stm32_project_template/user/wdg.c">
 			<Option target="mcu.elf"/>
 		</Unit>
-		<Unit filename="/home/sunqi/CLionProjects/mcu/user/wdg.h">
+		<Unit filename="/home/sunqi/Desktop/project/clion_stm32_project_template/user/wdg.h">
 			<Option target="mcu.elf"/>
 		</Unit>
-		<Unit filename="/home/sunqi/CLionProjects/mcu/CMakeLists.txt">
+		<Unit filename="/home/sunqi/Desktop/project/clion_stm32_project_template/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
-		</Unit>
-		<Unit filename="/home/sunqi/CLionProjects/mcu/../../Desktop/mcu_proj/conf/toolchain-arm-eabi-gcc.cmake">
-			<Option virtualFolder="CMake Files\..\..\Desktop\mcu_proj\conf\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

@@ -2,8 +2,8 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
     <generated>
-      <config projectName="mcu" targetName="mcu" />
       <config projectName="mcu" targetName="mcu.elf" />
+      <config projectName="mcu" targetName="mcu" />
     </generated>
   </component>
   <component name="CMakeSettings" AUTO_RELOAD="true">
@@ -12,11 +12,8 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d8dfa1d-6399-4291-900b-8f4e5c229b79" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gdbinit" beforeDir="false" afterPath="$PROJECT_DIR$/.gdbinit" afterDir="false" />
+    <list default="true" id="2d8dfa1d-6399-4291-900b-8f4e5c229b79" name="Default" comment="删除一些不重要的文件 让整个工程尽可能的简单">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReadMe" beforeDir="false" afterPath="$PROJECT_DIR$/ReadMe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeCache.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.8.2/CMakeASMCompiler.cmake" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.8.2/CMakeCCompiler.cmake" beforeDir="false" />
@@ -38,12 +35,7 @@
       <change beforePath="$PROJECT_DIR$/build/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/build/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/cmake_install.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/mcu.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/build/mcu.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build_project.sh" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stdlib/Src/stm32f10x_gpio.c" beforeDir="false" afterPath="$PROJECT_DIR$/stdlib/Src/stm32f10x_gpio.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/startup/STM32F103XE_FLASH.ld" beforeDir="false" afterPath="$PROJECT_DIR$/system/startup/STM32F103XE_FLASH.ld" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/toolchain-arm-eabi-gcc.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/writeflash.expect.sh" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -61,8 +53,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="329" selection-start-line="329" selection-end-line="329" />
+            <state relative-caret-position="308">
+              <caret line="337" column="22" lean-forward="true" selection-start-line="337" selection-start-column="22" selection-end-line="337" selection-end-column="22" />
               <folding>
                 <element signature="e#509#2120#0" />
                 <element signature="e#1357#1662#0" expanded="true" />
@@ -110,7 +102,7 @@
         <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="265">
-              <caret line="57" column="43" lean-forward="true" selection-start-line="57" selection-start-column="43" selection-end-line="57" selection-end-column="43" />
+              <caret line="57" column="43" selection-start-line="57" selection-start-column="43" selection-end-line="57" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -119,7 +111,7 @@
         <entry file="file://$PROJECT_DIR$/.gdbinit">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
-              <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+              <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -206,7 +198,6 @@
         <option value="$PROJECT_DIR$/stdlib/Src/stm32f10x_gpio.c" />
         <option value="$PROJECT_DIR$/ReadMe" />
         <option value="$PROJECT_DIR$/writeflash.expect.sh" />
-        <option value="$PROJECT_DIR$/main.c" />
         <option value="$PROJECT_DIR$/build_project.sh" />
         <option value="$PROJECT_DIR$/system/startup/startup_stm32f103xe.s" />
         <option value="$PROJECT_DIR$/system/startup/STM32F103XE_FLASH.ld" />
@@ -215,6 +206,7 @@
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/.gdbinit1" />
         <option value="$PROJECT_DIR$/.gdbinit" />
+        <option value="$PROJECT_DIR$/main.c" />
       </list>
     </option>
   </component>
@@ -263,11 +255,6 @@
             </path>
             <path>
               <item name="mcu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="clion_stm32_project_template" type="462c0819:PsiDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mcu" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
@@ -306,12 +293,15 @@
     </option>
   </component>
   <component name="RunManager" selected="GDB Remote Debug.mcu remote debug">
-    <configuration name="mcu remote debug" type="CLion_Remote" factoryName="GDB Remote Debug" singleton="true" debugger="$USER_HOME$/program/gcc-arm-none-eabi-5_4-2016q3/bin/arm-none-eabi-gdb" remoteCommand=":3333" symbolFile="$PROJECT_DIR$/build/mcu.elf" sysroot="">
-      <method v="2">
-        <option name="RunConfigurationTask" enabled="true" run_configuration_name="build" run_configuration_type="CMakeRunConfiguration" />
-      </method>
+    <configuration name="mcu remote debug" type="CLion_Remote" factoryName="GDB Remote Debug" singleton="true" debugger="$USER_HOME$/program/gcc-arm-none-eabi-5_4-2016q3/bin/arm-none-eabi-gdb" remoteCommand=" :3333" symbolFile="$PROJECT_DIR$/build/mcu.elf" sysroot="">
+      <method v="2" />
     </configuration>
     <configuration name="build" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" EXPLICIT_BUILD_TARGET_NAME="all">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration xmlns:elmot-ocd="https://github.com/elmot/clion-embedded-arm" default="true" type="elmot.embedded.openocd.conf.type" factoryName="elmot.embedded.openocd.conf.factory" singleton="false" PASS_PARENT_ENVS_2="true" elmot-ocd:gdb-port="3333" elmot-ocd:telnet-port="4444" elmot-ocd:reset-type="INIT" elmot-ocd:download-type="ALWAYS">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -368,7 +358,7 @@
       <workItem from="1527818820614" duration="862000" />
       <workItem from="1527819922421" duration="2158000" />
       <workItem from="1527822429736" duration="2733000" />
-      <workItem from="1527839894758" duration="5630000" />
+      <workItem from="1527839894758" duration="8108000" />
     </task>
     <task id="LOCAL-00001" summary="第二次">
       <created>1505742975995</created>
@@ -454,11 +444,18 @@
       <option name="project" value="LOCAL" />
       <updated>1506238043964</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="删除一些不重要的文件 让整个工程尽可能的简单">
+      <created>1527846775560</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1527846775561</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="270597000" />
+    <option name="totallyTimeSpent" value="273075000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -471,15 +468,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1037" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.45075125" visible="true" weight="0.6696905" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.45075125" visible="true" weight="0.17022412" />
       <window_info id="Structure" order="1" sideWeight="0.48247078" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.54924875" side_tool="true" weight="0.26742426" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.2538941" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.47121212" weight="0.2631579" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4466382" visible="true" weight="0.2752193" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4466382" weight="0.2752193" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.48636365" weight="0.47807017" />
@@ -488,7 +484,7 @@
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.48399147" weight="0.39254385" />
       <window_info anchor="bottom" id="CMake" order="10" sideWeight="0.48132336" weight="0.36293858" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.45757577" weight="0.47039473" />
+      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.45757577" visible="true" weight="0.47039473" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -567,7 +563,8 @@
     <MESSAGE value="remote debug内启动前会使用手动的编译脚本,这个比较简陋 重新编译所有文件，而不是只编译改动的文件。" />
     <MESSAGE value="增加了MCP41050变阻器的驱动程序" />
     <MESSAGE value="修复MCP41050 SPI的bug TXE置位以后 其实SPI的数据还完全没有发完到数据口上" />
-    <option name="LAST_COMMIT_MESSAGE" value="修复MCP41050 SPI的bug TXE置位以后 其实SPI的数据还完全没有发完到数据口上" />
+    <MESSAGE value="删除一些不重要的文件 让整个工程尽可能的简单" />
+    <option name="LAST_COMMIT_MESSAGE" value="删除一些不重要的文件 让整个工程尽可能的简单" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -903,7 +900,7 @@
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="265">
-          <caret line="57" column="43" lean-forward="true" selection-start-line="57" selection-start-column="43" selection-end-line="57" selection-end-column="43" />
+          <caret line="57" column="43" selection-start-line="57" selection-start-column="43" selection-end-line="57" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -924,7 +921,7 @@
     <entry file="file://$PROJECT_DIR$/.gdbinit">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -937,8 +934,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="329" selection-start-line="329" selection-end-line="329" />
+        <state relative-caret-position="308">
+          <caret line="337" column="22" lean-forward="true" selection-start-line="337" selection-start-column="22" selection-end-line="337" selection-end-column="22" />
           <folding>
             <element signature="e#509#2120#0" />
             <element signature="e#1357#1662#0" expanded="true" />
